@@ -13,7 +13,7 @@ $imgDir = __DIR__ . '/../images';
 if (!is_dir($imgDir)) {
     mkdir($imgDir, 0777, true);
 }
-$data = ['image' => '/images/abahcprofileultrawide.jpg', 'srcsetWebp' => '', 'srcsetJpg' => ''];
+$data = ['image' => '/images/blog_banner.jpg', 'srcsetWebp' => '', 'srcsetJpg' => ''];
 if (file_exists($bannerFile)) {
     $json = json_decode(file_get_contents($bannerFile), true);
     if ($json) $data = array_merge($data, $json);

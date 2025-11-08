@@ -115,7 +115,7 @@ function format_blog_date($str)
     return $ts !== false ? date('F j, Y g:i a', $ts) : $str;
 }
 $bannerFile = __DIR__ . '/data/banner.json';
-$banner = ['image' => '/images/abahcprofileultrawide.jpg', 'srcsetWebp' => '', 'srcsetJpg' => ''];
+$banner = ['image' => '/images/blog_banner.jpg', 'srcsetWebp' => '', 'srcsetJpg' => ''];
 if (file_exists($bannerFile)) {
     $tmp = json_decode(file_get_contents($bannerFile), true);
     if ($tmp)

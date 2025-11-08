@@ -95,7 +95,7 @@ $metaDesc = $pageMeta['description'] ?? ('Get in touch with ' . $siteName . '.')
 $metaKeywords = $pageMeta['keywords'] ?? '';
 $ogTitle = $pageMeta['og_title'] ?? $metaTitle;
 $ogDesc = $pageMeta['og_description'] ?? $metaDesc;
-$ogImage = $pageMeta['og_image'] ?? '/images/abahcprofileultrawide.jpg';
+$ogImage = $pageMeta['og_image'] ?? '/images/site-og-image.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="en">

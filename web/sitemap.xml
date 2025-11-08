@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com</loc>
+    <loc>https://example.com/</loc>
   </url>
   <url>
     <loc>https://example.com/blog/</loc>
@@ -10,57 +10,6 @@
     <loc>https://example.com/discography/</loc>
   </url>
   <url>
-    <loc>https://example.com/discography/playlists/</loc>
-  </url>
-  <url>
     <loc>https://example.com/contact/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_bloody_spectacles/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_spiral_mandates/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_surface_solutions/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_butterfly_cages/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_drift_patterns/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_silent_signals/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_madhouse_scrawls/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_milk_splatters/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_accident_plans/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_forbidden_verses/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_therapy_sessions/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_fon_tapes/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/albums/the_living_versions/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/playlists/halloween-mix/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/playlists/songs-ft-betty-malaise/</loc>
-  </url>
-  <url>
-    <loc>https://example.com/discography/playlists/bawlers-mix/</loc>
   </url>
 </urlset>
