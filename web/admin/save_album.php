@@ -942,7 +942,7 @@ if ((!\$live || \$comingSoon) && empty(\$_SESSION['logged_in'])) {
   <meta property="og:image"       content="{$coverImage}"/>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-  <link rel="stylesheet" href="/css/slick-player.css?v=<?php echo \$assetVersion; ?>" />
+  <link rel="stylesheet" href="/css/album-player.css?v=<?php echo \$assetVersion; ?>" />
   <link rel="stylesheet" href="/discography/albums/{$folder}/css/style.css?v=<?php echo \$assetVersion; ?>" />
   <link rel="apple-touch-icon" sizes="180x180" href="/profile/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/profile/favicon/favicon-32x32.png">
@@ -953,7 +953,7 @@ if ((!\$live || \$comingSoon) && empty(\$_SESSION['logged_in'])) {
   <?php include \$_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
 </head>
 <body class="album-font-scope">
-<?php include \$_SERVER['DOCUMENT_ROOT'] . '/includes/slick-player.php'; ?>
+<?php include \$_SERVER['DOCUMENT_ROOT'] . '/includes/album-player.php'; ?>
 <script src="/js/audio-player.js?v=<?php echo \$assetVersion; ?>" defer></script>
 <script src="/js/home-iframe.js?v=<?php echo \$assetVersion; ?>" defer></script>
 <script src="/js/share-links.js?v=<?php echo \$assetVersion; ?>" defer></script>

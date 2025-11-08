@@ -239,7 +239,7 @@ function formatCredits(array $creditsArr): string
     </div>
   </div>
 </div>
-<div class="audio-player-container slick-player">
+<div class="audio-player-container album-player slick-player">
   <!-- Background video/image layer -->
   <div class="player-background" style="background-color: <?= $backgroundColor ?>;">
     <!-- Option A: looping video -->
@@ -454,4 +454,4 @@ function formatCredits(array $creditsArr): string
     </script>
     <!-- Include your external JS (e.g., player-logic.js) here -->
 
-    <!-- End of slick-player.php -->
+    <!-- End of album-player.php -->
