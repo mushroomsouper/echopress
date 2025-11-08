@@ -239,7 +239,7 @@ function formatCredits(array $creditsArr): string
     </div>
   </div>
 </div>
-<div class="audio-player-container album-player slick-player">
+<div class="audio-player-container album-player album-player">
   <!-- Background video/image layer -->
   <div class="player-background" style="background-color: <?= $backgroundColor ?>;">
     <!-- Option A: looping video -->
