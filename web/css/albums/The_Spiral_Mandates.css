@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'LPCervoSerif';
+    /* The name you’ll reference in CSS */
+    src: url('/assets/fonts/LPCervoSerif.woff2')
+        /* Root-relative path to the WOFF2 file */
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* optional—but recommended */
+}
+
+body {
+    font-family: 'LPCervoSerif', serif;
+}
+
+.track-item {
+
+    font-size: clamp(26px, 2.5vw, 36px);
+    color: #f5edb3;
+    border-bottom: 2px solid rgba(255, 243, 156, 0.493);
+}
+
+.album-details {
+    color: #f5edb3;
+}
+
+.track-item .track-length {
+
+    font-size: 0.8em;
+    line-height: 1.7em;
+}

@@ -1,0 +1,221 @@
+{
+    "job": "alb-mhgvg850mptc2c",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762037211,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762037211,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762037211,
+            "message": "Processing track 01 of 11: Who Am I?"
+        },
+        {
+            "time": 1762037211,
+            "message": "Encoding download MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762037211,
+            "message": "Encoding streaming MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762037213,
+            "message": "Generating FLAC copy for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762037214,
+            "message": "Processing track 02 of 11: Hello Friend"
+        },
+        {
+            "time": 1762037214,
+            "message": "Encoding download MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762037214,
+            "message": "Encoding streaming MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762037217,
+            "message": "Generating FLAC copy for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762037218,
+            "message": "Processing track 03 of 11: Paywall"
+        },
+        {
+            "time": 1762037218,
+            "message": "Encoding download MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762037218,
+            "message": "Encoding streaming MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762037220,
+            "message": "Generating FLAC copy for track 03 (Paywall)"
+        },
+        {
+            "time": 1762037221,
+            "message": "Processing track 04 of 11: Anatomically Incorrect"
+        },
+        {
+            "time": 1762037221,
+            "message": "Encoding download MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762037221,
+            "message": "Encoding streaming MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762037224,
+            "message": "Generating FLAC copy for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762037225,
+            "message": "Processing track 05 of 11: Crimson Sky"
+        },
+        {
+            "time": 1762037225,
+            "message": "Encoding download MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762037225,
+            "message": "Encoding streaming MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762037227,
+            "message": "Generating FLAC copy for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762037228,
+            "message": "Processing track 06 of 11: Dyschronometria"
+        },
+        {
+            "time": 1762037228,
+            "message": "Encoding download MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762037228,
+            "message": "Encoding streaming MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762037231,
+            "message": "Generating FLAC copy for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762037231,
+            "message": "Processing track 07 of 11: Mind Control"
+        },
+        {
+            "time": 1762037231,
+            "message": "Encoding download MP3 for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762037231,
+            "message": "Encoding streaming MP3 for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762037234,
+            "message": "Generating FLAC copy for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762037235,
+            "message": "Processing track 08 of 11: Travel Light"
+        },
+        {
+            "time": 1762037235,
+            "message": "Encoding download MP3 for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762037235,
+            "message": "Encoding streaming MP3 for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762037237,
+            "message": "Generating FLAC copy for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762037238,
+            "message": "Processing track 09 of 11: Beggin' For Love"
+        },
+        {
+            "time": 1762037238,
+            "message": "Encoding download MP3 for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762037238,
+            "message": "Encoding streaming MP3 for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762037241,
+            "message": "Generating FLAC copy for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762037241,
+            "message": "Processing track 10 of 11: Carnival Of Thoughts"
+        },
+        {
+            "time": 1762037241,
+            "message": "Encoding download MP3 for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762037243,
+            "message": "Encoding streaming MP3 for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762037245,
+            "message": "Generating FLAC copy for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762037246,
+            "message": "Processing track 11 of 11: Landmark"
+        },
+        {
+            "time": 1762037246,
+            "message": "Encoding download MP3 for track 11 (Landmark)"
+        },
+        {
+            "time": 1762037249,
+            "message": "Encoding streaming MP3 for track 11 (Landmark)"
+        },
+        {
+            "time": 1762037253,
+            "message": "Generating FLAC copy for track 11 (Landmark)"
+        },
+        {
+            "time": 1762037253,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762037253,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762037253,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762037253,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762037290,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762037290,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762037290,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762037290
+}

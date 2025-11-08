@@ -1,0 +1,93 @@
+{
+    "job": "alb-mhguyt324z1uw3",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762036400,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762036400,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762036400,
+            "message": "Processing track 01 of 03: Who Am I?"
+        },
+        {
+            "time": 1762036400,
+            "message": "Encoding download MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036403,
+            "message": "Encoding streaming MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036405,
+            "message": "Generating FLAC copy for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036406,
+            "message": "Processing track 02 of 03: Hello Friend"
+        },
+        {
+            "time": 1762036406,
+            "message": "Encoding download MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036409,
+            "message": "Encoding streaming MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036412,
+            "message": "Generating FLAC copy for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036413,
+            "message": "Processing track 03 of 03: 03 Paywall"
+        },
+        {
+            "time": 1762036413,
+            "message": "Encoding download MP3 for track 03 (03 Paywall)"
+        },
+        {
+            "time": 1762036415,
+            "message": "Encoding streaming MP3 for track 03 (03 Paywall)"
+        },
+        {
+            "time": 1762036417,
+            "message": "Generating FLAC copy for track 03 (03 Paywall)"
+        },
+        {
+            "time": 1762036418,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762036418,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762036418,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762036418,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762036455,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762036455,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762036455,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762036455
+}

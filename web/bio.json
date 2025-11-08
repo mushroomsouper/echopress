@@ -1,0 +1,6 @@
+{
+    "text": "<em data-start=\"0\" data-end=\"16\">{{ARTIST_NAME}}</em> is ready to share their story. Replace this placeholder with your own background, themes, and intent during installation.",
+    "image": "images/bio-placeholder.jpg",
+    "srcsetWebp": "images/bio-placeholder-320.webp 320w, images/bio-placeholder-640.webp 640w, images/bio-placeholder-1024.webp 1024w",
+    "srcsetJpg": "images/bio-placeholder-320.jpg 320w, images/bio-placeholder-640.jpg 640w, images/bio-placeholder-1024.jpg 1024w"
+}

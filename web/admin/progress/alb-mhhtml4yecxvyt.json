@@ -1,0 +1,141 @@
+{
+    "job": "alb-mhhtml4yecxvyt",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762094663,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762094663,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762094663,
+            "message": "Processing track 01 of 06: Upanichrist"
+        },
+        {
+            "time": 1762094663,
+            "message": "Encoding download MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094663,
+            "message": "Encoding streaming MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094666,
+            "message": "Generating FLAC copy for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094667,
+            "message": "Processing track 02 of 06: Fate of the World"
+        },
+        {
+            "time": 1762094667,
+            "message": "Encoding download MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094668,
+            "message": "Encoding streaming MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094669,
+            "message": "Generating FLAC copy for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094670,
+            "message": "Processing track 03 of 06: Closest Others"
+        },
+        {
+            "time": 1762094670,
+            "message": "Encoding download MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094670,
+            "message": "Encoding streaming MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094673,
+            "message": "Generating FLAC copy for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094674,
+            "message": "Processing track 04 of 06: Fon"
+        },
+        {
+            "time": 1762094674,
+            "message": "Encoding download MP3 for track 04 (Fon)"
+        },
+        {
+            "time": 1762094678,
+            "message": "Encoding streaming MP3 for track 04 (Fon)"
+        },
+        {
+            "time": 1762094682,
+            "message": "Generating FLAC copy for track 04 (Fon)"
+        },
+        {
+            "time": 1762094683,
+            "message": "Processing track 05 of 06: Ripple Effect"
+        },
+        {
+            "time": 1762094683,
+            "message": "Encoding download MP3 for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094686,
+            "message": "Encoding streaming MP3 for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094689,
+            "message": "Generating FLAC copy for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094690,
+            "message": "Processing track 06 of 06: It Is What It Is (A Demon's Game)"
+        },
+        {
+            "time": 1762094690,
+            "message": "Encoding download MP3 for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094693,
+            "message": "Encoding streaming MP3 for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094696,
+            "message": "Generating FLAC copy for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094697,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762094697,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762094697,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762094697,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762094734,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762094734,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762094734,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762094734
+}

@@ -1,0 +1,121 @@
+{
+    "job": "alb-mhgjvyif6oijt4",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762017774,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762017774,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 01 of 09: Caught In A Web"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 01 unchanged (Caught In A Web)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 02 of 09: Forked Path"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 02 unchanged (Forked Path)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 03 of 09: Moment To Moment"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 03 unchanged (Moment To Moment)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 04 of 09: Ghosts Of Us"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 04 unchanged (Ghosts Of Us)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 05 of 09: Second Chances"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 05 unchanged (Second Chances)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 06 of 09: Clean Break"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 06 unchanged (Clean Break)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 07 of 09: Memory Wipe"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 07 unchanged (Memory Wipe)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 08 of 09: Unravelling"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 08 unchanged (Unravelling)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Processing track 09 of 09: Alternate Endings"
+        },
+        {
+            "time": 1762017774,
+            "message": "Track 09 unchanged (Alternate Endings)"
+        },
+        {
+            "time": 1762017774,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762017774,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762017774,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762017774,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762017811,
+            "message": "Updated album CSS theme"
+        },
+        {
+            "time": 1762017811,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762017811,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762017811,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762017811
+}

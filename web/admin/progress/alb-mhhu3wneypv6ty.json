@@ -1,0 +1,141 @@
+{
+    "job": "alb-mhhu3wneypv6ty",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762095405,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762095405,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 01 of 09: Upanichrist"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 01 unchanged (Upanichrist)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 02 of 09: Fate of the World"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 02 unchanged (Fate of the World)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 03 of 09: Closest Others"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 03 unchanged (Closest Others)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 04 of 09: Fon"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 04 unchanged (Fon)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 05 of 09: Ripple Effect"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 05 unchanged (Ripple Effect)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 06 of 09: It Is What It Is (A Demon's Game)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Track 06 unchanged (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762095405,
+            "message": "Processing track 07 of 09: Scott Free"
+        },
+        {
+            "time": 1762095405,
+            "message": "Encoding download MP3 for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762095405,
+            "message": "Encoding streaming MP3 for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762095407,
+            "message": "Generating FLAC copy for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762095408,
+            "message": "Processing track 08 of 09: Hijack My Heart"
+        },
+        {
+            "time": 1762095408,
+            "message": "Encoding download MP3 for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762095408,
+            "message": "Encoding streaming MP3 for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762095412,
+            "message": "Generating FLAC copy for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762095413,
+            "message": "Processing track 09 of 09: No Cares Given"
+        },
+        {
+            "time": 1762095413,
+            "message": "Encoding download MP3 for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762095413,
+            "message": "Encoding streaming MP3 for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762095417,
+            "message": "Generating FLAC copy for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762095418,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762095418,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762095418,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762095418,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762095455,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762095455,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762095455,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762095455
+}

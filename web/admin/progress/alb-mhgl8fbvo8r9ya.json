@@ -1,0 +1,189 @@
+{
+    "job": "alb-mhgl8fbvo8r9ya",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762020058,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762020058,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762020058,
+            "message": "Processing track 01 of 09: Hear Ye Hear Ye"
+        },
+        {
+            "time": 1762020058,
+            "message": "Encoding download MP3 for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762020058,
+            "message": "Encoding streaming MP3 for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762020060,
+            "message": "Generating FLAC copy for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762020060,
+            "message": "Processing track 02 of 09: Wishin'"
+        },
+        {
+            "time": 1762020060,
+            "message": "Encoding download MP3 for track 02 (Wishin')"
+        },
+        {
+            "time": 1762020061,
+            "message": "Encoding streaming MP3 for track 02 (Wishin')"
+        },
+        {
+            "time": 1762020062,
+            "message": "Generating FLAC copy for track 02 (Wishin')"
+        },
+        {
+            "time": 1762020063,
+            "message": "Processing track 03 of 09: 03 Into The Sun"
+        },
+        {
+            "time": 1762020063,
+            "message": "Encoding download MP3 for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762020063,
+            "message": "Encoding streaming MP3 for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762020066,
+            "message": "Generating FLAC copy for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762020066,
+            "message": "Processing track 04 of 09: 04 Dialektical Symfonia"
+        },
+        {
+            "time": 1762020066,
+            "message": "Encoding download MP3 for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762020066,
+            "message": "Encoding streaming MP3 for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762020069,
+            "message": "Generating FLAC copy for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762020069,
+            "message": "Processing track 05 of 09: Devil In The Digital"
+        },
+        {
+            "time": 1762020069,
+            "message": "Encoding download MP3 for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762020069,
+            "message": "Encoding streaming MP3 for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762020072,
+            "message": "Generating FLAC copy for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762020072,
+            "message": "Processing track 06 of 09: Slippery Wet Tongue"
+        },
+        {
+            "time": 1762020072,
+            "message": "Encoding download MP3 for track 06 (Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762020072,
+            "message": "Encoding streaming MP3 for track 06 (Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762020076,
+            "message": "Generating FLAC copy for track 06 (Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762020077,
+            "message": "Processing track 07 of 09: Old Ghosts"
+        },
+        {
+            "time": 1762020077,
+            "message": "Encoding download MP3 for track 07 (Old Ghosts)"
+        },
+        {
+            "time": 1762020080,
+            "message": "Encoding streaming MP3 for track 07 (Old Ghosts)"
+        },
+        {
+            "time": 1762020083,
+            "message": "Generating FLAC copy for track 07 (Old Ghosts)"
+        },
+        {
+            "time": 1762020084,
+            "message": "Processing track 08 of 09: Covered In Shit"
+        },
+        {
+            "time": 1762020084,
+            "message": "Encoding download MP3 for track 08 (Covered In Shit)"
+        },
+        {
+            "time": 1762020087,
+            "message": "Encoding streaming MP3 for track 08 (Covered In Shit)"
+        },
+        {
+            "time": 1762020091,
+            "message": "Generating FLAC copy for track 08 (Covered In Shit)"
+        },
+        {
+            "time": 1762020092,
+            "message": "Processing track 09 of 09: The End Is Near"
+        },
+        {
+            "time": 1762020092,
+            "message": "Encoding download MP3 for track 09 (The End Is Near)"
+        },
+        {
+            "time": 1762020095,
+            "message": "Encoding streaming MP3 for track 09 (The End Is Near)"
+        },
+        {
+            "time": 1762020099,
+            "message": "Generating FLAC copy for track 09 (The End Is Near)"
+        },
+        {
+            "time": 1762020099,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762020099,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762020099,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762020099,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762020137,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762020137,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762020137,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762020137
+}

@@ -1,0 +1,59 @@
+a {
+    cursor: pointer;
+}
+
+.header h1 {
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-weight: 900;
+}
+
+.header h2 {
+    margin: 1vw 0 0;
+}
+
+body {
+    font-family: "Share Tech Mono", monospace;
+}
+
+article h2 a {
+    font-family: 'Press Start 2P';
+    font-size: 2.5rem !important;
+}
+
+header.header {
+    background-position: center right;
+    height: 30vw;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 2vw;
+    background-size: cover;
+    background-color: #c3c3c3;
+}
+
+.logo {
+
+    margin-left: 0;
+
+    padding-left: 0;
+
+    height: auto;
+}
+
+.article header h2,
+.article header h2 a {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2.6rem;
+}
+
+nav.breadcrumbs {
+    margin-top: 1rem;
+}
+
+#md-modal button {
+    position:sticky;
+    right: 0;
+    top: 0;
+}

@@ -1,0 +1,151 @@
+{
+    "title": "Songs ft. Betty Malaise",
+    "artist": "EchoPress Artist",
+    "description": "",
+    "displayOrder": 1,
+    "live": true,
+    "comingSoon": false,
+    "themeColor": "#333333",
+    "textColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "background": "",
+    "backgroundImage": "",
+    "cover": "assets/cover.jpg",
+    "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+    "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w",
+    "coverBlur": "assets/cover_blur.jpg",
+    "font": "",
+    "genre": "Alternative Hip-Hop, Post Punk, Outsider",
+    "languages": [
+        "English"
+    ],
+    "type": "playlist",
+    "tracks": [
+        {
+            "id": 2997,
+            "title": "Ghosts Of Us",
+            "length": "02:38",
+            "explicit": false,
+            "lyrics": "In a dim-lit room where shadows weave,\r\nWhispers linger, hearts deceive,\r\nWe\u2019re stuck in time, can\u2019t find reprieve,\r\nLiving the same lie, we can't believe.\r\nEvery touch, a memory fades,\r\nHaunted by the games we played,\r\nRound and round, our love turns to dust,\r\nWe're just the ghosts, the ghosts of us.\r\n\r\nAnd I fell in love with an idea\r\nAnd then it was real\r\nThe blossoming the bloom\r\nThe baby in the womb\r\nAnd the idea of this\r\nThis is what I miss\r\nIs the idea of this\r\n\r\nNeon signs flicker, casting gloom,\r\nSecrets hidden in this tomb,\r\nEvery kiss, a flower\u2019s bloom,\r\nWilting in the endless room.\r\nEvery lie, a silent scream,\r\nEvery truth, a shattered dream,\r\nIn this loop, we\u2019re lost, it seems,\r\nTime\u2019s a thief that plots and schemes\r\n\r\nBefore it was real\r\nLong before the steal\r\nWhen it was just an idea\r\nA shimmer of pearl\r\nAnd a midnight game\r\nA mighty open road with an open gate\r\nAn open road with an open gate\r\n",
+            "trackNumber": 4,
+            "album": {
+                "slug": "the_accident_plans",
+                "title": "The Accident Plans",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_accident_plans/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_accident_plans/download/mp3/track04.mp3",
+            "position": 0,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        },
+        {
+            "id": 1381,
+            "title": "Dreams Of Destruction",
+            "length": "02:22",
+            "explicit": false,
+            "lyrics": "Dreams of destruction, born from your pain,\r\nEvery tear a lesson, every scar a name.\r\nDreams of destruction, I rise from the fall,\r\nThank you for giving me the nerve to take it all.\r\n\r\nYou forced me to change,\r\nTo die and rise anew.\r\nIf not for your cruelty,\r\nI\u2019d be just like you.\r\n\r\nYour disrespect, the weight of your scorn,\r\nBecame the fire where I was reborn.\r\n\r\nDreams of destruction, born from your pain,\r\nEvery tear a lesson, every scar a name.\r\nDreams of destruction, I rise from the fall,\r\nThank you for giving me the nerve to take it all.\r\n\r\nIf you hadn\u2019t spit on me,\r\nIf you hadn\u2019t pushed me down,\r\nI\u2019d have never found the courage,\r\nTo stand my ground.\r\n\r\nI wouldn\u2019t have martyred myself for this art,\r\nWouldn\u2019t have fought through the dark.\r\n\r\nDreams of destruction, born from your pain,\r\nEvery tear a lesson, every scar a name.\r\nDreams of destruction, I rise from the fall,\r\nThank you for giving me the nerve to take it all.\r\n\r\nThank you, thank you, for making me cry.\r\nThank you, thank you, for giving me the will to try.",
+            "trackNumber": 6,
+            "album": {
+                "slug": "the_bloody_spectacles",
+                "title": "The Bloody Spectacles",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_bloody_spectacles/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_bloody_spectacles/download/mp3/track06.mp3",
+            "position": 1,
+            "year": "2025",
+            "genre": "Alternative Hip-Hop / Post Punk / Outsider "
+        },
+        {
+            "id": 1741,
+            "title": "The Insects Have Finally Taken Over",
+            "length": "02:47",
+            "explicit": true,
+            "lyrics": "I knew this day would come, saw it creeping near\r\nAll that was inside me is empty, bare, and clear\r\nMy universe is theirs now, taken bit by bit\r\nTiny creatures, endless names, feeding in the pit\r\n\r\nRage, hope, nothing, care \u2013\r\nSell, cell, cry, despair!\r\nSwarming over me\r\nThey\u2019ve claimed the air I breathe\r\n\r\nWords crawl from my mouth, they leave me numb and raw\r\nThey eat at my feelings, bite by vicious bite, they gnaw\r\nLanguage is a parasite, crawling through my veins\r\nLeaving nothing but echoes, empty space remains\r\n\r\nRage, hope, nothing, care \u2013\r\nSell, cell, cry, despair!\r\nSwarming over me\r\nThey\u2019ve claimed the air I breathe\r\n\r\nCrave the poison, make love to the pain\r\nStop reading, stop writing, let the bugs reign\r\nMy soul\u2019s dissolved, my will is thin\r\nThe insects have finally taken me in\r\n\r\nThey whisper \u201cFUCK, SHIT, DIE\u201d from underneath my skin\r\nEach word another dose of toxin sinking in\r\nVomit, spit, and numbness, swirling in their hive\r\nI\u2019m the hollow carcass that they\u2019ve left behind alive\r\n\r\nRage, hope, nothing, care \u2013\r\nSell, cell, cry, despair!\r\nSwarming over me\r\nThey\u2019ve claimed the air I breathe\r\n\r\nOutside is a beautiful day, but I\u2019m caged in here\r\nSurrounded by the buzzing, every shadow reappears\r\nThe insects have taken over, their whispers fill your head\r\nSo close your eyes, surrender \u2013 You're better off dead\r\n\r\nRage, hope, nothing, care \u2013\r\nSell, cell, cry, despair!\r\nSwarming over me\r\nThey\u2019ve claimed the air I breathe",
+            "trackNumber": 2,
+            "album": {
+                "slug": "the_butterfly_cages",
+                "title": "The Butterfly Cages",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_butterfly_cages/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_butterfly_cages/download/mp3/track02.mp3",
+            "position": 2,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 2865,
+            "title": "Move Like Water",
+            "length": "02:03",
+            "explicit": false,
+            "lyrics": "I learned to breathe beneath the surface,\r\nIn the dark where pressure fades.\r\nShe taught me peace in the undertow,\r\nWhere nothing breaks, just bends and flows.\r\n\r\nCapsized by the wave, but I float inside,\r\nNo struggle now, just the ride.\r\nDrift with the current, lose control,\r\nThe deep calls out to me, and I answer slow\r\nI see the shoreline out in the distance,\r\nBut I\u2019m here to stay, brother, no resistance.\r\ncaught in the sway, I move with ease,\r\nLet the water carry me where it pleases.\r\n\r\nMove like water, flow where I\u2019m called,\r\nBend with the river, no fight at all.\r\nWhen the currents rise, I won\u2019t fall,\r\nI\u2019ll move like water, through it all.\r\n\r\nI tried to swim against the waterfall,\r\nOnly to be dragged beneath it all.\r\nThe fall was steep, the current wide,\r\nBut I float now, with the changing tide.\r\nWhat I thought was strength, I let it break,\r\nFound my power when I let it take.\r\nNo fight, just flow, but now I see,\r\nWith the force of nature , I part the sea.\r\n\r\nMove like water, flow where I\u2019m called, \r\nBend with the river, no fight at all.\r\nWhen the currents rise, I won\u2019t fall,\r\nI\u2019ll move like water, through it all.\r\n\r\nA ripple spreads from the smallest stone,\r\nDisturbs the calm, but I\u2019m not alone.\r\nThe water shifts, but I let it go,\r\nWe\u2019re all just waves in the same flow.",
+            "trackNumber": 5,
+            "album": {
+                "slug": "the_silent_signals",
+                "title": "The Silent Signals",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_silent_signals/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_silent_signals/download/mp3/track05.mp3",
+            "position": 3,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        },
+        {
+            "id": 1419,
+            "title": "Indescribable",
+            "length": "03:12",
+            "explicit": false,
+            "lyrics": "It starts as a whisper, soft and thin,\r\nA thought too sharp to stay within.\r\nThe walls close in, the mirrors crack,\r\nEvery shadow creeping to pull me back.\r\n\r\nAnd I\u2019m just watching, frozen in place,\r\nThe slow-motion collapse of the human race.\r\n\r\nIndescribable, it\u2019s falling apart,\r\nPieces of a soul, shards of a heart.\r\nIndescribable, spinning out of control,\r\nBreaking the body, it's all gone cold.\r\n\r\nA spark ignites in the hollow frame,\r\nThe fire spreads, but it has no name.\r\nA house of glass, dying inside,\r\nShattering silence with nowhere to hide.\r\n\r\nNo way to stop it, no way to rewind,\r\nIt all falls to pieces in the back of your mind.\r\n\r\nIndescribable, it\u2019s falling apart,\r\nPieces of a soul, shards of a heart.\r\nIndescribable, spinning out of control,\r\nBreaking the body, it's all gone cold.\r\n\r\nI tried to hold it together, I swear I did.\r\nBut the floor gave way, and I can\u2019t forgive.\r\nEach thought\u2019s a wave, dragging me down,\r\nAnd no one can save me, I\u2019m going to drown.\r\n\r\nIndescribable, it\u2019s falling apart,\r\nPieces of a soul, shards of a heart.\r\nIndescribable, spinning out of control,\r\nBreaking the body, it's all gone cold.\r\n\r\nIndescribable\u2026",
+            "trackNumber": 5,
+            "album": {
+                "slug": "the_surface_solutions",
+                "title": "The Surface Solutions",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_surface_solutions/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_surface_solutions/download/mp3/track05.mp3",
+            "position": 4,
+            "year": "2025",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 1422,
+            "title": "Unmade Bed",
+            "length": "03:07",
+            "explicit": false,
+            "lyrics": "The violence in my heart, the silence I keep,\r\nThe love I don\u2019t let in, the secrets buried deep.\r\nThe dishes in the sink, the unmade bed,\r\nThese quiet symbols of the words unsaid.\r\nOutside, the world tears itself apart,\r\nBut I retreat to a house of art.\r\nCurtains drawn, shadows fall,\r\nA clean facade while the cracks crawl the walls.\r\n\r\nThe unmade bed waits just beyond,\r\nWhere the wind howls loud, where the order\u2019s gone.\r\nYour tidy walls can\u2019t hold the weight,\r\nOf a world undone, of a fractured state.\r\n\r\nBad thoughts I can\u2019t escape, visions I can\u2019t shake,\r\nA house in order can\u2019t stop what breaks.\r\nThis quiet chaos, a fragile frame,\r\nThe weight of guilt when we share the blame.\r\nThe streets cry out, the lights grow dim,\r\nA fractured state that can\u2019t hold in.\r\nBut here I sit, my hands are tied,\r\nWhile you stand tall on the system\u2019s side.\r\n\r\nThe unmade bed waits just beyond,\r\nWhere the wind howls loud, where the order\u2019s gone.\r\nYour tidy walls can\u2019t hold the weight,\r\nOf a world undone, of a fractured state.\r\n\r\nYou speak of order from on high,\r\nWhile the rest of us can only try.\r\nYour tidy world, a great diversion,\r\nFrom the system\u2019s deepest perversion.\r\n\r\nThe unmade bed, it stays the same,\r\nA witness left to take the blame.\r\nAnd though you try, you can\u2019t ignore,\r\nThe storm outside, it rattles the door.\r\n",
+            "trackNumber": 8,
+            "album": {
+                "slug": "the_surface_solutions",
+                "title": "The Surface Solutions",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_surface_solutions/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_surface_solutions/download/mp3/track08.mp3",
+            "position": 5,
+            "year": "2025",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        }
+    ]
+}

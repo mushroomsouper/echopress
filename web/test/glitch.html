@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glitch Test</title>
+  <style>
+    /* page setup */
+    body {
+      background: #000;
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* glitch heading */
+    .site-title {
+      position: relative;
+      font-family: sans-serif;
+      font-size: 4rem;
+      color: #fff;
+      /* ensure the pseudo-elements render crisply */
+      transform: translateZ(0);
+    }
+    .site-title::before,
+    .site-title::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: 1;
+    }
+    .site-title::before {
+      left: 2px;
+      text-shadow: -2px 0 red;
+      clip: rect(0, 100%, 40%, 0);
+      animation: glitch 2s infinite linear alternate-reverse;
+    }
+    .site-title::after {
+      left: -2px;
+      text-shadow: -2px 0 cyan;
+      clip: rect(30%, 100%, 80%, 0);
+      animation: glitch 3s infinite linear alternate-reverse;
+    }
+    @keyframes glitch {
+      0%   { clip: rect(0, 100%, 5%, 0);     transform: translate(0); }
+      10%  { clip: rect(10%, 100%, 35%, 0);   transform: translate(-2px, -2px); }
+      20%  { clip: rect(20%, 100%, 60%, 0);   transform: translate(2px, 2px); }
+      30%  { clip: rect(30%, 100%, 30%, 0);   transform: translate(-2px, 2px); }
+      40%  { clip: rect(40%, 100%, 70%, 0);   transform: translate(2px, -2px); }
+      50%  { clip: rect(0, 100%, 80%, 0);     transform: translate(-2px, 0); }
+      60%  { clip: rect(10%, 100%, 50%, 0);   transform: translate(2px, 2px); }
+      70%  { clip: rect(20%, 100%, 30%, 0);   transform: translate(-2px, -2px); }
+      80%  { clip: rect(30%, 100%, 60%, 0);   transform: translate(2px, -2px); }
+      90%  { clip: rect(40%, 100%, 40%, 0);   transform: translate(-2px, 2px); }
+      100% { clip: rect(0, 100%, 90%, 0);     transform: translate(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- note the data-text attribute is required for the pseudo-elements -->
+  <h1 class="site-title" data-text="EchoPress Artist">
+    EchoPress Artist
+  </h1>
+</body>
+</html>

@@ -1,0 +1,141 @@
+{
+    "job": "alb-mhgv244duvzg4j",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762036554,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762036554,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762036554,
+            "message": "Processing track 01 of 06: Who Am I?"
+        },
+        {
+            "time": 1762036554,
+            "message": "Encoding download MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036554,
+            "message": "Encoding streaming MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036557,
+            "message": "Generating FLAC copy for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036557,
+            "message": "Processing track 02 of 06: Hello Friend"
+        },
+        {
+            "time": 1762036557,
+            "message": "Encoding download MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036558,
+            "message": "Encoding streaming MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036561,
+            "message": "Generating FLAC copy for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036561,
+            "message": "Processing track 03 of 06: Paywall"
+        },
+        {
+            "time": 1762036561,
+            "message": "Encoding download MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036561,
+            "message": "Encoding streaming MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036564,
+            "message": "Generating FLAC copy for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036564,
+            "message": "Processing track 04 of 06: Anatomically Incorrect"
+        },
+        {
+            "time": 1762036565,
+            "message": "Encoding download MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036567,
+            "message": "Encoding streaming MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036570,
+            "message": "Generating FLAC copy for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036571,
+            "message": "Processing track 05 of 06: Crimson Sky"
+        },
+        {
+            "time": 1762036571,
+            "message": "Encoding download MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036573,
+            "message": "Encoding streaming MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036576,
+            "message": "Generating FLAC copy for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036577,
+            "message": "Processing track 06 of 06: Dyschronometria"
+        },
+        {
+            "time": 1762036577,
+            "message": "Encoding download MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036579,
+            "message": "Encoding streaming MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036582,
+            "message": "Generating FLAC copy for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036582,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762036582,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762036582,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762036582,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762036619,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762036619,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762036619,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762036619
+}

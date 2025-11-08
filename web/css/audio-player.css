@@ -1,0 +1,237 @@
+/* Container */
+.audio-player-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+
+/* Album Info */
+.album-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.album-cover {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.album-details h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+}
+
+.album-details p {
+  margin: 0.125rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Player Controls */
+.player-controls {
+  text-align: center;
+}
+
+.now-playing {
+  margin-bottom: 0.5rem;
+}
+
+.now-playing button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.now-playing button:focus {
+  outline: 1px solid #888;
+}
+
+/* Highlight Repeat when active */
+.repeat-btn.active {
+  color: var(--theme-color);
+}
+
+.track-info {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Track List */
+.track-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+
+.track-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.track-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.track-list li.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.audio-player-container {
+  /* …existing styles… */
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+.time-elapsed,
+.time-duration {
+  width: 3em;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.progress-bar {
+  flex: 1;
+  margin: 0 0.5em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: var(--text-color, #ccc);
+  border-radius: 2px;
+  outline: none;
+  background-image: linear-gradient(var(--theme-color, #fff), var(--theme-color, #fff));
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--theme-color, #444);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+  border: 2px solid var(--theme-color, #444);
+}
+
+.progress-bar::-moz-range-track {
+  height: 4px;
+  background: var(--text-color, #ccc);
+  border-radius: 2px;
+}
+
+.progress-bar::-moz-range-progress {
+  background: var(--theme-color, #fff);
+  height: 4px;
+  border-radius: 2px;
+}
+
+.progress-bar::-ms-track {
+  height: 4px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.progress-bar::-ms-fill-lower {
+  background: var(--theme-color, #fff);
+  border-radius: 2px;
+}
+
+.progress-bar::-ms-fill-upper {
+  background: var(--text-color, #ccc);
+  border-radius: 2px;
+}
+
+.audio-visualizer {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: #111;
+  /* dark background */
+  margin-top: 0.5em;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5em;
+}
+
+/* Simple styling—adjust to match your theme */
+.volume-slider {
+  width: 100%;
+  max-width: 120px;
+  margin-left: 0.5em;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: #ccc;
+  border-radius: 2px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #444;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -4px;
+  /* center vertically */
+}
+
+@media (max-width: 600px) {
+  .volume-container {
+    position: relative;
+  }
+
+  .volume-slider {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    writing-mode: vertical-lr;
+    direction: rtl;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    appearance: slider-vertical;
+    background: linear-gradient(to top,
+        var(--theme-color) 0% var(--fill-percentage),
+        var(--text-color) var(--fill-percentage) 100%);
+  }
+
+  .volume-container.show-slider .volume-slider {
+    display: block;
+  }
+}
+
+span.title-number .fa-spinner {
+  font-size: 0.9em;
+}

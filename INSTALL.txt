@@ -1,0 +1,39 @@
+EchoPress Installation Instructions
+=================================
+
+Prerequisites
+-------------
+- PHP 8.1 or newer with the PDO extension and either SQLite (default) or MySQL/MariaDB available
+- Imagick or GD extension recommended for album artwork processing
+- Writable `storage/` directory (for SQLite DB, installer lock, newsletter throttling)
+- Web server configured to map your site’s document root to the `web/` folder in this repository
+
+Option A: Web-based installer (recommended for shared hosting)
+-------------------------------------------------------------
+1. Upload or clone the EchoPress files so that your web root points to the `web/` directory (many hosts let you upload the archive and extract it inside `public_html`).
+2. Open `https://your-domain/install/` in a browser. The wizard checks server requirements and prompts for:
+   - Site name, tagline, primary URL, contact email, timezone
+   - Database driver: SQLite (default) or MySQL/MariaDB + credentials
+   - Newsletter delivery: PHP `mail()`, SMTP, or webhook (SendGrid/custom API)
+   - Optional download of FFmpeg into `storage/tools/bin`
+3. Click “Install EchoPress.” The wizard writes `.env`, runs migrations, seeds directories, downloads FFmpeg when possible, and drops `storage/installer.lock`.
+4. Remove or restrict access to `/install/` if your host does not automatically block it once the lock file exists.
+5. Log into `/admin/` with your existing credentials (or migrate users from the original site) and start publishing.
+
+Option B: CLI installer (for SSH access or scripted deployments)
+----------------------------------------------------------------
+1. SSH into your server, position the repository where you’d like it, and ensure `web/` will be the document root.
+2. Run `php installer/install.php` and answer the prompts. The script mirrors the web wizard, writing `.env`, running migrations, downloading FFmpeg, and creating `storage/installer.lock`.
+3. Point your web server to the `web/` directory, then visit `/admin/`.
+
+Re-running the installer / resetting
+-----------------------------------
+- Delete `storage/installer.lock` if you need to re-run either installer (for example, after wiping the database).
+- If you switch database drivers or newsletter transports later, update `.env`/`config/app.php` and re-run `php installer/migrate.php --driver=<sqlite|mysql>` if needed.
+
+Post-install checklist
+----------------------
+- Visit Admin ➜ Analytics Embed to paste your Google/Matomo/Plausible tracking snippet.
+- Configure newsletter delivery (Admin ➜ Newsletter) and SMTP/webhook credentials if you didn’t set them during install.
+- Update favicon/assets via the admin panel, and verify that your `storage/` and `updates/` directories remain writable for future releases.
+- If FFmpeg couldn’t be downloaded automatically, upload your own binary into `storage/tools/bin/` or run `php tools/install_tools.php ffmpeg` when network access is available.

@@ -1,0 +1,9 @@
+# Example Nginx configuration for example.com
+# Place this inside your server block.
+
+# Serve static files directly under /blog/.
+location /blog/ {
+    try_files $uri $uri/ /blog/post.php?$query_string;
+}
+
+# Add any analytics routes provided by your tracking snippet below.

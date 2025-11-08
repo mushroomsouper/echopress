@@ -1,0 +1,133 @@
+{
+    "job": "alb-mhgn9sqgldw0up",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762023458,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762023459,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 01 of 10: Hear Ye Hear Ye"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 01 unchanged (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 02 of 10: Wishin'"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 02 unchanged (Wishin')"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 03 of 10: Into The Sun"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 03 unchanged (Into The Sun)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 04 of 10: Dialektical Symfonia"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 04 unchanged (Dialektical Symfonia)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 05 of 10: Devil In The Digital"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 05 unchanged (Devil In The Digital)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 06 of 10: Slippery Wet Tongue"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 06 unchanged (Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 07 of 10: Old Ghosts"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 07 unchanged (Old Ghosts)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 08 of 10: Covered In Shit"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 08 unchanged (Covered In Shit)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 09 of 10: The End Is Near"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 09 unchanged (The End Is Near)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Processing track 10 of 10: Killswitch"
+        },
+        {
+            "time": 1762023459,
+            "message": "Track 10 unchanged (Killswitch)"
+        },
+        {
+            "time": 1762023459,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762023459,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762023459,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762023459,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762023496,
+            "message": "Updated album CSS theme"
+        },
+        {
+            "time": 1762023496,
+            "message": "Updated custom HTML snippet"
+        },
+        {
+            "time": 1762023496,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762023496,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762023496,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762023496
+}

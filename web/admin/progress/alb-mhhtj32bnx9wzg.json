@@ -1,0 +1,93 @@
+{
+    "job": "alb-mhhtj32bnx9wzg",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762094477,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762094477,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762094477,
+            "message": "Processing track 01 of 03: Upanichrist"
+        },
+        {
+            "time": 1762094477,
+            "message": "Encoding download MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094481,
+            "message": "Encoding streaming MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094484,
+            "message": "Generating FLAC copy for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094485,
+            "message": "Processing track 02 of 03: Fate of the World"
+        },
+        {
+            "time": 1762094485,
+            "message": "Encoding download MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094487,
+            "message": "Encoding streaming MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094489,
+            "message": "Generating FLAC copy for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094489,
+            "message": "Processing track 03 of 03: Closest Others"
+        },
+        {
+            "time": 1762094489,
+            "message": "Encoding download MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094492,
+            "message": "Encoding streaming MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094495,
+            "message": "Generating FLAC copy for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094496,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762094496,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762094496,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762094496,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762094533,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762094533,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762094533,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762094533
+}

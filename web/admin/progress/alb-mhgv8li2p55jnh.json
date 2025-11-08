@@ -1,0 +1,189 @@
+{
+    "job": "alb-mhgv8li2p55jnh",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762036863,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762036863,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762036863,
+            "message": "Processing track 01 of 09: Who Am I?"
+        },
+        {
+            "time": 1762036863,
+            "message": "Encoding download MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036863,
+            "message": "Encoding streaming MP3 for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036866,
+            "message": "Generating FLAC copy for track 01 (Who Am I?)"
+        },
+        {
+            "time": 1762036866,
+            "message": "Processing track 02 of 09: Hello Friend"
+        },
+        {
+            "time": 1762036866,
+            "message": "Encoding download MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036866,
+            "message": "Encoding streaming MP3 for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036869,
+            "message": "Generating FLAC copy for track 02 (Hello Friend)"
+        },
+        {
+            "time": 1762036870,
+            "message": "Processing track 03 of 09: Paywall"
+        },
+        {
+            "time": 1762036870,
+            "message": "Encoding download MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036870,
+            "message": "Encoding streaming MP3 for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036873,
+            "message": "Generating FLAC copy for track 03 (Paywall)"
+        },
+        {
+            "time": 1762036873,
+            "message": "Processing track 04 of 09: Anatomically Incorrect"
+        },
+        {
+            "time": 1762036873,
+            "message": "Encoding download MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036873,
+            "message": "Encoding streaming MP3 for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036876,
+            "message": "Generating FLAC copy for track 04 (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762036877,
+            "message": "Processing track 05 of 09: Crimson Sky"
+        },
+        {
+            "time": 1762036877,
+            "message": "Encoding download MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036877,
+            "message": "Encoding streaming MP3 for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036879,
+            "message": "Generating FLAC copy for track 05 (Crimson Sky)"
+        },
+        {
+            "time": 1762036880,
+            "message": "Processing track 06 of 09: Dyschronometria"
+        },
+        {
+            "time": 1762036880,
+            "message": "Encoding download MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036880,
+            "message": "Encoding streaming MP3 for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036883,
+            "message": "Generating FLAC copy for track 06 (Dyschronometria)"
+        },
+        {
+            "time": 1762036883,
+            "message": "Processing track 07 of 09: Mind Control"
+        },
+        {
+            "time": 1762036884,
+            "message": "Encoding download MP3 for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762036886,
+            "message": "Encoding streaming MP3 for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762036889,
+            "message": "Generating FLAC copy for track 07 (Mind Control)"
+        },
+        {
+            "time": 1762036889,
+            "message": "Processing track 08 of 09: Travel Light"
+        },
+        {
+            "time": 1762036889,
+            "message": "Encoding download MP3 for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762036892,
+            "message": "Encoding streaming MP3 for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762036894,
+            "message": "Generating FLAC copy for track 08 (Travel Light)"
+        },
+        {
+            "time": 1762036895,
+            "message": "Processing track 09 of 09: Beggin' For Love"
+        },
+        {
+            "time": 1762036895,
+            "message": "Encoding download MP3 for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762036898,
+            "message": "Encoding streaming MP3 for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762036900,
+            "message": "Generating FLAC copy for track 09 (Beggin' For Love)"
+        },
+        {
+            "time": 1762036901,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762036901,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762036901,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762036901,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762036938,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762036938,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762036938,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762036938
+}

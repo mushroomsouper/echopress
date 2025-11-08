@@ -1,0 +1,149 @@
+{
+    "job": "alb-mhgyx6834c30ad",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762043023,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762043023,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 01 of 11: Who Am I?"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 01 unchanged (Who Am I?)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 02 of 11: Hello Friend"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 02 unchanged (Hello Friend)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 03 of 11: Paywall"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 03 unchanged (Paywall)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 04 of 11: Anatomically Incorrect"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 04 unchanged (Anatomically Incorrect)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 05 of 11: Crimson Sky"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 05 unchanged (Crimson Sky)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 06 of 11: Dyschronometria"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 06 unchanged (Dyschronometria)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 07 of 11: Mind Control"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 07 unchanged (Mind Control)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 08 of 11: Travel Light"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 08 unchanged (Travel Light)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 09 of 11: Beggin' For Love"
+        },
+        {
+            "time": 1762043023,
+            "message": "Track 09 unchanged (Beggin' For Love)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Processing track 10 of 11: Carnival Of Thoughts"
+        },
+        {
+            "time": 1762043023,
+            "message": "Encoding download MP3 for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762043023,
+            "message": "Encoding streaming MP3 for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762043025,
+            "message": "Generating FLAC copy for track 10 (Carnival Of Thoughts)"
+        },
+        {
+            "time": 1762043026,
+            "message": "Processing track 11 of 11: Landmark"
+        },
+        {
+            "time": 1762043026,
+            "message": "Encoding download MP3 for track 11 (Landmark)"
+        },
+        {
+            "time": 1762043026,
+            "message": "Encoding streaming MP3 for track 11 (Landmark)"
+        },
+        {
+            "time": 1762043029,
+            "message": "Generating FLAC copy for track 11 (Landmark)"
+        },
+        {
+            "time": 1762043030,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762043030,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762043030,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762043030,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762043068,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762043068,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762043068,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762043068
+}

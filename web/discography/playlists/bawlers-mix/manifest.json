@@ -1,0 +1,235 @@
+{
+    "title": "Bawlers Mix",
+    "artist": "EchoPress Artist",
+    "description": "",
+    "displayOrder": 2,
+    "live": true,
+    "comingSoon": false,
+    "themeColor": "#333333",
+    "textColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "background": "",
+    "backgroundImage": "",
+    "cover": "assets/cover.jpg",
+    "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+    "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w",
+    "coverBlur": "assets/cover_blur.jpg",
+    "font": "",
+    "genre": "Alternative Hip-Hop, Post Punk, Outsider",
+    "languages": [
+        "English"
+    ],
+    "type": "playlist",
+    "tracks": [
+        {
+            "id": 2846,
+            "title": "We Fell From The Sky",
+            "length": "03:17",
+            "explicit": false,
+            "lyrics": "Hiding under skies and umbrellas,\r\nIt rained mysteriously frail, just like glass.\r\nFeelings rotting like the meat on my bones,\r\nFalling apart, so delicate, won\u2019t last.\r\nI watched as the ground pulled us closer,\r\nEach second stretched, with our hearts finally sober.\r\nGravity's pull, it wraps around tight,\r\nWe hold on for now knowing it'll all soon be over.\r\n\r\nWe fell from the sky, and now we know,\r\nEverything that rises must let go.\r\nLike echoes of dreams we cannot keep,\r\nWe float through the air, and quietly sleep.\r\n\r\nAs the walls of the universe expand,\r\nThe horizon sinks deeper, out of hand.\r\nFear on my face, I can\u2019t hide from the truth,\r\nWhat\u2019s beautiful fades, and all slips through.\r\nI tried to reach out, but the stars slipped away,\r\nFalling like ash at the end of the day.\r\nThe sky was our cradle, but now it\u2019s our grave,\r\nWe drift through the silence, no strength left to save.\r\n\r\nWe fell from the sky, and now we know,\r\nEverything that rises must let go.\r\nLike echoes of dreams we cannot keep,\r\nWe float through the air, and quietly sleep.\r\n\r\nGravity wraps around, forming new skin,\r\nWe were weightless once, but can\u2019t begin again.\r\nThe wound is still fresh, my love was so sweet,\r\nBut even the sky is falling at our feet.\r\n\r\nSo pick me up from the floor once more,\r\nCarry me down to the place where I felt safe before \r\nWe fell from the sky, and that\u2019s all we know,\r\nFragile as glass, we let ourselves go.",
+            "trackNumber": 5,
+            "album": {
+                "slug": "the_drift_patterns",
+                "title": "The Drift Patterns",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_drift_patterns/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_drift_patterns/download/mp3/track05.mp3",
+            "position": 0,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 1382,
+            "title": "The Greatest Tragedy",
+            "length": "03:59",
+            "explicit": false,
+            "lyrics": "Jesus got lynched, no doubt about it,\r\nA tragedy written in stone.\r\nBut the greatest one is still unwritten,\r\nWaiting to carve its name in bone.\r\n\r\nThe tears don\u2019t hurt; they\u2019re only water,\r\nThe sky above is just air.\r\n\r\nThe greatest tragedy, yet to unfold,\r\nA story waiting, dark and cold.\r\nThe greatest tragedy, we\u2019re all to blame,\r\nThe blood and fire will bear our names.\r\n\r\nThe mystery spins, a shadowed riddle,\r\nGetting scrutinized to death.\r\nBut soon we\u2019ll see with unclouded eyes,\r\nThe truth inside our final breath.\r\n\r\nThe sight we need, the grace to forgive,\r\nTo love, to heal, and learn to live.\r\n\r\nThe greatest tragedy, yet to unfold,\r\nA story waiting, dark and cold.\r\nThe greatest tragedy, we\u2019re all to blame,\r\nThe blood and fire will bear our names.\r\n\r\nNo savior can save us from ourselves,\r\nNo martyr\u2019s sacrifice will break the spell.\r\nThe greatest tragedy is yet to be,\r\nA reflection of our history.\r\n\r\nThe tears don\u2019t hurt; they\u2019re only water.\r\nThe sky won\u2019t fall; it\u2019s only air.\r\n\r\nThe greatest tragedy, yet to unfold,\r\nA story waiting, dark and cold.\r\nThe greatest tragedy, we\u2019re all to blame,\r\nThe blood and fire will bear our names.\r\n\r\nThe greatest tragedy is waiting still,\r\nIts echo rising, its shadow will.",
+            "trackNumber": 7,
+            "album": {
+                "slug": "the_bloody_spectacles",
+                "title": "The Bloody Spectacles",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_bloody_spectacles/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_bloody_spectacles/download/mp3/track07.mp3",
+            "position": 1,
+            "year": "2025",
+            "genre": "Alternative Hip-Hop / Post Punk / Outsider "
+        },
+        {
+            "id": 2838,
+            "title": "Defeating Thoughts",
+            "length": "02:57",
+            "explicit": false,
+            "lyrics": "At the helm, but auto-pilot\u2019s on,\r\nRewinding the past, where have I gone wrong?\r\nStuck in this movie, can\u2019t find the remote,\r\nReplaying old scenes that choke in my throat.\r\nMy gears spin backward, I can\u2019t seem to quit,\r\nThe deeper I go, the harder I slip.\r\nEvery mistake, like a scar on my soul,\r\nI\u2019m a ghost in the system, can\u2019t find the controls.\r\n\r\nOne defeating thought led to another,\r\nAnd then another,\r\nAnd then another,\r\nI ask myself, why do I even bother?\r\nOne defeating thought led to another,\r\nAnd then another,\r\nAnd then another,\r\nI ask myself, will I ever recover?\r\n\r\nThe clock keeps ticking, but I\u2019m standing still,\r\nLost in the shadows of my own free will.\r\nThe coffee\u2019s gone cold, but I drink it all down,\r\nNumb to the taste, lost in this town.\r\nI\u2019m driving in circles with the tank on E,\r\nThe radio\u2019s busted, but it\u2019s all I need.\r\nThese thoughts keep looping like a broken cassette,\r\nSpitting out lines I just can\u2019t forget.\r\n\r\nI\u2019m wired to the noise, but I crave the silence,\r\nCaught in the middle of comfort and violence.\r\nThe signals are crossed, and I\u2019m losing my way,\r\nFading in shadows, where night eats the day.\r\nIf I could just break through, smash the machine,\r\nEscape from this loop, wipe the system clean.\r\nBut the more I resist, the tighter it clings,\r\nA symphony of chaos that endlessly sings.\r\n\r\nOne defeating thought led to another,\r\nAnd then another,\r\nAnd then another,\r\nI ask myself, why do I even bother?\r\nOne defeating thought led to another,\r\nAnd then another,\r\nAnd then another,\r\nI ask myself, will I ever recover?",
+            "trackNumber": 6,
+            "album": {
+                "slug": "the_milk_splatters",
+                "title": "The Milk Splatters",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_milk_splatters/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_milk_splatters/download/mp3/track06.mp3",
+            "position": 2,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 2795,
+            "title": "The Fool",
+            "length": "02:22",
+            "explicit": false,
+            "lyrics": "i gave up on learning\r\nsaid i wasn\u2019t built for it\r\ncalled myself cursed\r\nand let the fear sit\r\nwatched others rise\r\nwhile i played dead\r\ncalled it wisdom\r\nbut it was just dread\r\n\r\ni wore the clown suit\r\nso no one would ask\r\nabout the cracks in my skin\r\nor the weight in my mask\r\nsaid \u201ci\u2019m just joking\u201d\r\nafter every cry\r\ni laughed at my grief\r\nand let myself die\r\n\r\nbut i\u2019m not the fool\r\nyou made me feel like\r\ni was just a mirror\r\ncatching the wrong light\r\ni bent to survive\r\nand called it a pose\r\nbut now i know\r\nwhat i didn\u2019t know\r\n\r\ni used to think\r\ni had nothing to give\r\nbut i gave everything\r\njust to live\r\nand maybe i missed\r\nsome cues and signs\r\nbut i always showed up\r\neven when i lied\r\n\r\n\u201cthere\u2019s a difference\r\nbetween being blind\r\nand being afraid\r\nto see\u201d\r\n\r\ni\u2019m not the fool\r\nyou kept in your play\r\ni just forgot\r\ni could walk away\r\ni bent to survive\r\nand called it a pose\r\nbut now i know\r\nwhat i didn\u2019t know\r\n\r\ncall me naive\r\ncall me strange\r\ni just call it change",
+            "trackNumber": 8,
+            "album": {
+                "slug": "the_living_versions",
+                "title": "The Living Versions",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_living_versions/assets/cover.jpg",
+                "coverBlur": "/discography/albums/the_living_versions/assets/cover_blur.jpg",
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_living_versions/download/mp3/track08.mp3",
+            "position": 3,
+            "year": "2025",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        },
+        {
+            "id": 2849,
+            "title": "Invisible Audience",
+            "length": "03:53",
+            "explicit": false,
+            "lyrics": "I saw them in the shadows, faceless yet known, \r\nWhispers crawling up my spine, a secret of my own. \r\nThe audience watches, silent but close,\r\nWhat do they know? And what are they waiting for?\r\n\r\nEvery glance is a message, \r\nBut none of them speak, \r\nI\u2019m trapped in their silence, \r\nWith no answers to seek. \r\n\r\nLet them watch, let them scheme, \r\nI\u2019m caught inside this unseen dream. \r\nThey wait for something, but I don\u2019t know what, \r\nTangled in their gaze, tied up in knots. \r\nDark stain, I can\u2019t scrub clean, \r\nLet them watch, let them scheme, \r\nTheir silence is louder than my screams.\r\nIs louder than my screams. \r\n\r\nI felt the ground shake, and a ripple through the sky, \r\nBelieved the world burned in my name, and never knowing why. \r\nDid I make it rain? Could this be my curse? \r\nEvery eye turned my way, As it kept getting worse. \r\n\r\nWhat do they want from me? What are they waiting for? \r\nI feel their judgment like knives in my core. \r\n\r\nLet them watch, let them judge, \r\nI cannot bear this heavy grudge. \r\nA shadow haunts me, fills my mind, \r\nTheir gaze has changed me, made me blind. \r\nI thought they'd reach out, pull me through, \r\nBut here I stand\u2014what else can I do? \r\nLet them judge, let them pry, \r\nI can\u2019t tell what they want or why. \r\n\r\nI wait for the signal, \r\nfor the word, for the call, \r\nBut the waiting never ends,\r\nIt consumes me whole\r\n\r\nBelieved for so long that I was their instrument. \r\nNow the truth splits me open, fragile and small. \r\nI won\u2019t move, I won\u2019t fall, I won't heed their call \r\n\r\nLet them wait, let them stare, \r\nI\u2019ll stay here\u2014standing perfectly still. \r\nLet them poke, let them prod,\r\nI won't be their token god.\r\nThe vultures circle, wasting away\r\nAs I stand still they lose their way \r\nThe audience lingers, but I\u2019ll stand strong, \r\nSilent, defiant\u2014right where I belong.",
+            "trackNumber": 8,
+            "album": {
+                "slug": "the_drift_patterns",
+                "title": "The Drift Patterns",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_drift_patterns/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_drift_patterns/download/mp3/track08.mp3",
+            "position": 4,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 1747,
+            "title": "The Cure",
+            "length": "03:38",
+            "explicit": false,
+            "lyrics": "Your hideous tumor, growing inside\r\nA sickness you can\u2019t run from, nowhere to hide\r\nFreezing yourself, trying to survive\r\nHolding the wound just to stay alive\r\n\r\nI am the cure you cannot take\r\nThe poison inside you can\u2019t forsake\r\nLocked in a cage you made alone\r\nMy voice the whisper, the undertone\r\n\r\nEach day you carry it, sinking deep\r\nA weight on your heart, robbing sleep\r\nInvisible, yet it colors the light\r\nHolding tight, it swallows your fight\r\n\r\nI am the cure you cannot take\r\nThe poison inside you can\u2019t forsake\r\nLocked in a cage you made alone\r\nMy voice the whisper, the undertone\r\n\r\nIt grows like shadows, inch by inch\r\nA silent tether, an iron clench\r\nYou freeze yourself to keep it close\r\nA haunting bond, your quiet ghost\r\n\r\nYou\u2019d cut it out, but it\u2019s too late\r\nEmbedded deep, sealing your fate\r\nIt knows your name, it calls you home\r\nA cage of glass, flesh, and bone\r\n\r\nI am the cure you cannot take\r\nThe poison inside you can\u2019t forsake\r\nLocked in a cage you made alone\r\nMy voice the whisper, the undertone",
+            "trackNumber": 8,
+            "album": {
+                "slug": "the_butterfly_cages",
+                "title": "The Butterfly Cages",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_butterfly_cages/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_butterfly_cages/download/mp3/track08.mp3",
+            "position": 5,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 2843,
+            "title": "Exit Signs Over Water",
+            "length": "02:43",
+            "explicit": false,
+            "lyrics": "I can see the signs, flicker like ghosts above the tide,\r\nBut my feet are chained to the calm, I\u2019ve lost the will to fight.\r\nThere\u2019s nothing left to save me now,\r\nJust shadows dancing on the sea somehow.\r\n\r\nI search for air, but it\u2019s fading fast,\r\nI doubt I\u2019ll find my way to the surface at last.\r\n\r\nExit signs over water,\r\nCalling me but fading fast.\r\nIn this endless quiet, nothing matters,\r\nI\u2019m drowning, lost in the past.\r\nExit signs over water,\r\nFlickering dreams I can\u2019t reclaim,\r\nIn the stillness, my heart shatters,\r\nYet I keep reaching just the same.\r\n\r\nI thought I heard your voice in the crash of the waves,\r\nBut you\u2019re lost in the currents of everything I couldn\u2019t save.\r\nThe horizon fades, and I disappear,\r\nChasing echoes only I can hear.\r\n\r\nI search for light, but it\u2019s slipping away,\r\nI\u2019m sinking deeper into the quiet gray.\r\n\r\nExit signs over water,\r\nCalling me but fading fast.\r\nIn this endless quiet, nothing matters,\r\nI\u2019m drowning, lost in the past.\r\nExit signs over water,\r\nFlickering dreams I can\u2019t reclaim,\r\nIn the stillness, my heart shatters,\r\nYet I keep reaching just the same.\r\n\r\nI\u2019m sinking deeper now, the signs flicker out of view,\r\nIf I never leave this place, will I still dream of you?\r\nThe water rises, and I\u2019m swept away,\r\nBut I\u2019ll keep searching for another day.\r\nThe signs disappear, the water swallows me whole,\r\nI\u2019m still reaching, though I know, I\u2019ll never let go...",
+            "trackNumber": 2,
+            "album": {
+                "slug": "the_drift_patterns",
+                "title": "The Drift Patterns",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_drift_patterns/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_drift_patterns/download/mp3/track02.mp3",
+            "position": 6,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider "
+        },
+        {
+            "id": 2875,
+            "title": "Brother's Last Drag",
+            "length": "02:45",
+            "explicit": false,
+            "lyrics": "Ghosts of high school\r\nTaunting the sane\r\nMemories linger\r\nLike nicotine stains\r\n\r\nCigarette burns\r\non a broken hearts\r\nBrother's last drag\r\nover before it could start\r\n\r\nDown to the filter,\r\ndeep in the lung\r\nBeneath all the layers\r\nwhere shadows are hung\r\n\r\nEchoes of laughter,\r\ntwisted and cruel\r\nCarved into the halls\r\nof a forgotten school\r\n\r\nIn the haze of smoke\r\nwhere time stands still\r\nCaught in the echoes \r\nof the nights we kill\r\nCan't escape the shadows\r\nof who we could be\r\nTrapped in high school's hell\r\nfor eternity\r\nBlurry faces in old yearbook pages\r\nLost in the halls\r\nlocked in their cages\r\nTrapped in a world \r\nthat just don't \r\nBrother's last drag \r\nstill lingers in the air\r\n\r\nScratched out faces,\r\nstories untold\r\nTrapped in a teenage dream\r\nWhile the rest of us grow old\r\n\r\nYour songs taped over\r\nLost in the hum\r\nBut if you play it backwards\r\nA glimmer of hope might come\r\n\r\nHe held the pain\r\ndeep in his chest\r\nThen cancer came\r\nand put him to rest\r\nA young life lost\r\nnever had a chance to bloom\r\nBrother exhaled his last drag\r\nway too soon. ",
+            "trackNumber": 4,
+            "album": {
+                "slug": "the_madhouse_scrawls",
+                "title": "The Madhouse Scrawls",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_madhouse_scrawls/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_madhouse_scrawls/download/mp3/track04.mp3",
+            "position": 7,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        },
+        {
+            "id": 3340,
+            "title": "No Cares Given",
+            "length": "02:56",
+            "explicit": true,
+            "lyrics": "In the long, cold halls \r\nthat echoed silence\r\nevery corner, every space \r\nstained with pain \r\nWhispers soft \r\nmorphed into words of harsh violence.\r\nYet they never saw the damage, \r\nnever saw the stain.\r\nThey roamed eyes close, \r\nheart sealed \r\nunaware of caring of the suffering revealed \r\nyet amidst and it all your spirit refused to yield\r\nin the face of torment it was your armour \r\nYour shield\r\nThey didn\u2019t give a care\r\nAmid the chilling fear \r\nNo cares given here\r\nin the shadow of the despair \r\nWith blind eyes everywhere \r\nnot giving a single care \r\nAnd you were there\r\n\r\nthrough the torment, the cruelty and the laughter \r\nyour spirit remained free \r\nhope soared thereafter \r\nin the verses of sweet disaster\r\non a crumpled up page.\r\nYour silent war was waged \r\nwith every pen stroke \r\nyou weaved a tale \r\nof courage and resilience \r\nin the face of a gale.\r\nAnd through it all \r\nyour heart it didn't fail\r\nin the symphony of life \r\nyour melody prevailed.\r\n\r\nThey didn't give a care \r\nBehind their vacant stairs.\r\nNot a single care.\r\nYet in this unusually cruel \r\nand endless nightmare \r\nyour soul danced on a snare.\r\n\r\nThen you weren't there.\r\n\r\nThey didn\u2019t give a care, no \r\nA dance life's harsh meadows \r\nfaced with violence in the open air \r\nfor an audience so vacant and hollow \r\nin the realm of shadows where we dare \r\nWe found connection beyond compare \r\nyour words echo a defiant declaration \r\nbut did they give a fucking care? No.",
+            "trackNumber": 9,
+            "album": {
+                "slug": "the_fon_tapes",
+                "title": "The Fon Tapes",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_fon_tapes/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_fon_tapes/download/mp3/track09.mp3",
+            "position": 8,
+            "year": "2023",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        },
+        {
+            "id": 3002,
+            "title": "Alternate Endings",
+            "length": "03:55",
+            "explicit": true,
+            "lyrics": "In the quiet of the night, a shadow haunts my mind,\r\nA ghostly whisper, telling tales I can't unwind.\r\nIn the mirror's gaze, I see the cracks within my soul,\r\nA labyrinth of secrets, where I have no control.\r\n\r\nSearching for the answers in a world that feels so blind,\r\nDigging through the darkness, but the truth I cannot find.\r\nBuilding up the chaos just to make it feel aligned,\r\nIn these alternate endings, my pain is redefined.\r\n\r\nBroken glass beneath my feet, a path I can't retrace,\r\nI sabotage my life, leaving fragments in my wake.\r\nRelationships in ruin, like a mirror smashed to dust,\r\nI wear a mask of sanity, but inside I\u2019m fucked up\r\n\r\nSearching for the answers in a world that feels so blind,\r\nDigging through the darkness, but the truth I cannot find.\r\nBuilding up the chaos just to make it feel aligned,\r\nIn these alternate endings, my pain is redefined.\r\n\r\nI try to piece together all the memories that I lack,\r\nBut every time I think I've found it, I'm dragged further back.\r\nSelf-destruction seems to be the only way to cope,\r\nTo match my outer chaos with the pain that stole my hope.\r\n\r\nSearching for the answers in a world that feels so blind,\r\nDigging through the darkness, but the truth I cannot find.\r\nBuilding up the chaos just to make it feel aligned,\r\nIn these alternate endings, my pain is redefined.",
+            "trackNumber": 9,
+            "album": {
+                "slug": "the_accident_plans",
+                "title": "The Accident Plans",
+                "artist": "EchoPress Artist",
+                "cover": "/discography/albums/the_accident_plans/assets/cover.jpg",
+                "coverBlur": null,
+                "coverSrcsetWebp": "assets/cover-320.webp 320w, assets/cover-640.webp 640w, assets/cover-1024.webp 1024w",
+                "coverSrcsetJpg": "assets/cover-320.jpg 320w, assets/cover-640.jpg 640w, assets/cover-1024.jpg 1024w"
+            },
+            "audio": "/discography/albums/the_accident_plans/download/mp3/track09.mp3",
+            "position": 9,
+            "year": "2024",
+            "genre": "Alternative Hip-Hop, Post Punk, Outsider"
+        }
+    ]
+}

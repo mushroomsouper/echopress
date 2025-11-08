@@ -1,0 +1,141 @@
+{
+    "job": "alb-mhgkzqk259j4sx",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762019643,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762019643,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762019643,
+            "message": "Processing track 01 of 06: Hear Ye Hear Ye"
+        },
+        {
+            "time": 1762019643,
+            "message": "Encoding download MP3 for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762019644,
+            "message": "Encoding streaming MP3 for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762019645,
+            "message": "Generating FLAC copy for track 01 (Hear Ye Hear Ye)"
+        },
+        {
+            "time": 1762019646,
+            "message": "Processing track 02 of 06: Wishin'"
+        },
+        {
+            "time": 1762019646,
+            "message": "Encoding download MP3 for track 02 (Wishin')"
+        },
+        {
+            "time": 1762019646,
+            "message": "Encoding streaming MP3 for track 02 (Wishin')"
+        },
+        {
+            "time": 1762019648,
+            "message": "Generating FLAC copy for track 02 (Wishin')"
+        },
+        {
+            "time": 1762019648,
+            "message": "Processing track 03 of 06: 03 Into The Sun"
+        },
+        {
+            "time": 1762019648,
+            "message": "Encoding download MP3 for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762019648,
+            "message": "Encoding streaming MP3 for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762019651,
+            "message": "Generating FLAC copy for track 03 (03 Into The Sun)"
+        },
+        {
+            "time": 1762019651,
+            "message": "Processing track 04 of 06: 04 Dialektical Symfonia"
+        },
+        {
+            "time": 1762019652,
+            "message": "Encoding download MP3 for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762019654,
+            "message": "Encoding streaming MP3 for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762019656,
+            "message": "Generating FLAC copy for track 04 (04 Dialektical Symfonia)"
+        },
+        {
+            "time": 1762019657,
+            "message": "Processing track 05 of 06: Devil In The Digital"
+        },
+        {
+            "time": 1762019657,
+            "message": "Encoding download MP3 for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762019659,
+            "message": "Encoding streaming MP3 for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762019662,
+            "message": "Generating FLAC copy for track 05 (Devil In The Digital)"
+        },
+        {
+            "time": 1762019662,
+            "message": "Processing track 06 of 06: 06 Slippery Wet Tongue"
+        },
+        {
+            "time": 1762019662,
+            "message": "Encoding download MP3 for track 06 (06 Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762019666,
+            "message": "Encoding streaming MP3 for track 06 (06 Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762019670,
+            "message": "Generating FLAC copy for track 06 (06 Slippery Wet Tongue)"
+        },
+        {
+            "time": 1762019671,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762019671,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762019671,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762019671,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762019708,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762019708,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762019708,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762019708
+}

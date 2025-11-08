@@ -1,0 +1,189 @@
+{
+    "job": "alb-mhhtqom74knm9f",
+    "headline": "Album saved",
+    "status": "completed",
+    "statusText": "Album saved successfully",
+    "steps": [
+        {
+            "time": 1762094845,
+            "message": "Validating album information\u2026"
+        },
+        {
+            "time": 1762094845,
+            "message": "Prepared album directories and download folders"
+        },
+        {
+            "time": 1762094845,
+            "message": "Processing track 01 of 09: Upanichrist"
+        },
+        {
+            "time": 1762094845,
+            "message": "Encoding download MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094845,
+            "message": "Encoding streaming MP3 for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094849,
+            "message": "Generating FLAC copy for track 01 (Upanichrist)"
+        },
+        {
+            "time": 1762094850,
+            "message": "Processing track 02 of 09: Fate of the World"
+        },
+        {
+            "time": 1762094850,
+            "message": "Encoding download MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094850,
+            "message": "Encoding streaming MP3 for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094852,
+            "message": "Generating FLAC copy for track 02 (Fate of the World)"
+        },
+        {
+            "time": 1762094852,
+            "message": "Processing track 03 of 09: Closest Others"
+        },
+        {
+            "time": 1762094852,
+            "message": "Encoding download MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094852,
+            "message": "Encoding streaming MP3 for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094855,
+            "message": "Generating FLAC copy for track 03 (Closest Others)"
+        },
+        {
+            "time": 1762094856,
+            "message": "Processing track 04 of 09: Fon"
+        },
+        {
+            "time": 1762094856,
+            "message": "Encoding download MP3 for track 04 (Fon)"
+        },
+        {
+            "time": 1762094856,
+            "message": "Encoding streaming MP3 for track 04 (Fon)"
+        },
+        {
+            "time": 1762094860,
+            "message": "Generating FLAC copy for track 04 (Fon)"
+        },
+        {
+            "time": 1762094861,
+            "message": "Processing track 05 of 09: Ripple Effect"
+        },
+        {
+            "time": 1762094861,
+            "message": "Encoding download MP3 for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094861,
+            "message": "Encoding streaming MP3 for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094865,
+            "message": "Generating FLAC copy for track 05 (Ripple Effect)"
+        },
+        {
+            "time": 1762094865,
+            "message": "Processing track 06 of 09: It Is What It Is (A Demon's Game)"
+        },
+        {
+            "time": 1762094865,
+            "message": "Encoding download MP3 for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094866,
+            "message": "Encoding streaming MP3 for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094869,
+            "message": "Generating FLAC copy for track 06 (It Is What It Is (A Demon's Game))"
+        },
+        {
+            "time": 1762094870,
+            "message": "Processing track 07 of 09: Scott Free"
+        },
+        {
+            "time": 1762094870,
+            "message": "Encoding download MP3 for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762094872,
+            "message": "Encoding streaming MP3 for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762094874,
+            "message": "Generating FLAC copy for track 07 (Scott Free)"
+        },
+        {
+            "time": 1762094874,
+            "message": "Processing track 08 of 09: Hijack My Heart"
+        },
+        {
+            "time": 1762094874,
+            "message": "Encoding download MP3 for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762094879,
+            "message": "Encoding streaming MP3 for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762094883,
+            "message": "Generating FLAC copy for track 08 (Hijack My Heart)"
+        },
+        {
+            "time": 1762094884,
+            "message": "Processing track 09 of 09: No Cares Given"
+        },
+        {
+            "time": 1762094884,
+            "message": "Encoding download MP3 for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762094887,
+            "message": "Encoding streaming MP3 for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762094891,
+            "message": "Generating FLAC copy for track 09 (No Cares Given)"
+        },
+        {
+            "time": 1762094892,
+            "message": "Finished processing track audio"
+        },
+        {
+            "time": 1762094892,
+            "message": "Updated album manifest.json"
+        },
+        {
+            "time": 1762094892,
+            "message": "Updating album metadata in database"
+        },
+        {
+            "time": 1762094892,
+            "message": "Saved track metadata to database"
+        },
+        {
+            "time": 1762094929,
+            "message": "Updated public album page"
+        },
+        {
+            "time": 1762094929,
+            "message": "Regenerated sitemap"
+        },
+        {
+            "time": 1762094929,
+            "message": "Album saved successfully"
+        }
+    ],
+    "updated": 1762094929
+}

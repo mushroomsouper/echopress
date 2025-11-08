@@ -1,0 +1,5 @@
+.env
+storage/database/*.sqlite
+storage/installer.lock
+updates/packages/*
+!updates/packages/.gitkeep
