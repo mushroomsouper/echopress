@@ -1,0 +1,37 @@
+# EchoPress root .htaccess — allows running without changing docroot
+
+RewriteEngine On
+
+# 1) If the request is already for /web, let Apache handle it normally
+RewriteRule ^web/ - [L]
+
+# 2) If the requested path exists under /web, serve that file/dir
+RewriteCond %{DOCUMENT_ROOT}/web%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/web%{REQUEST_URI} -d
+RewriteRule ^ web%{REQUEST_URI} [L]
+
+# 3) Otherwise, route everything through the EchoPress front controller
+RewriteRule ^ web/index.php [L,QSA]
+
+# 4) For mod_php environments, ensure PHP sees the correct document root
+<IfModule mod_php.c>
+  php_value auto_prepend_file web/auto_prepend.php
+  php_flag display_errors Off
+  php_flag expose_php Off
+</IfModule>
+<IfModule mod_php7.c>
+  php_value auto_prepend_file web/auto_prepend.php
+  php_flag display_errors Off
+  php_flag expose_php Off
+</IfModule>
+<IfModule mod_php8.c>
+  php_value auto_prepend_file web/auto_prepend.php
+  php_flag display_errors Off
+  php_flag expose_php Off
+</IfModule>
+
+# 5) Basic hardening
+Options -Indexes
+FileETag None
+Header unset X-Powered-By
+
