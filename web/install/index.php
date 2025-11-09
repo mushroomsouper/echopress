@@ -530,6 +530,29 @@ function selected($value, $expected)
   prevBtn.addEventListener('click', () => { if (idx>0) { idx--; showStep(idx); } });
   nextBtn.addEventListener('click', () => { if (idx<steps.length-1) { idx++; showStep(idx); } });
 
+  // Validate on Install; if invalid, jump to the step containing the first invalid field
+  installBtn.addEventListener('click', (ev) => {
+    const form = document.getElementById('wizard-form');
+    if (!form) return;
+    if (!form.reportValidity()) {
+      ev.preventDefault();
+      const firstInvalid = form.querySelector(':invalid');
+      if (firstInvalid) {
+        // Find which step contains it
+        let s = firstInvalid.closest('.wizard-step');
+        if (s) {
+          const stepIndex = steps.indexOf(s);
+          if (stepIndex >= 0) {
+            idx = stepIndex;
+            showStep(idx);
+            // Focus the field so the browser shows the message
+            try { firstInvalid.focus(); } catch(e) {}
+          }
+        }
+      }
+    }
+  });
+
   function animateChecks(){
     const items = document.querySelectorAll('.checks .check-item');
     let i = 0;
