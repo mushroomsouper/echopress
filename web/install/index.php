@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canInstall) {
             'ECHOPRESS_DB_CONNECTION' => $dbDriver,
             'ECHOPRESS_MAIL_DRIVER' => $mailDriver,
             'ECHOPRESS_ARTIST_NAME' => $values['artist_name'],
-            'ECHOPRESS_FEATURE_NEWSLETTER' => ((isset($_POST['newsletter_enabled']) && $_POST['newsletter_enabled'] === '0') ? '0' : '1'),
+            'ECHOPRESS_FEATURE_NEWSLETTER' => ((isset($_POST['newsletter_enabled']) && $_POST['newsletter_enabled'] === '1') ? '1' : '0'),
         ];
 
         if ($dbDriver === 'mysql') {
@@ -275,6 +275,7 @@ function selected($value, $expected)
 
     <!-- EchoPress Wizard -->
     <form method="post" id="wizard-form" style="margin-bottom:2rem;">
+      <input type="hidden" name="current_step" id="current_step" value="<?= htmlspecialchars((string)($_POST['current_step'] ?? '1')) ?>">
       <!-- Step 1: Preflight (animated) -->
       <section class="wizard-step" data-step="1">
         <p>Step 1 of 7 — Preflight checks</p>
@@ -347,7 +348,9 @@ function selected($value, $expected)
       <!-- Step 6: Newsletter -->
       <section class="wizard-step" data-step="6" style="display:none;">
         <p>Step 6 of 7 — Newsletter (optional)</p>
-        <label><input type="checkbox" id="newsletter-enabled" name="newsletter_enabled" value="1" checked> Enable Newsletter</label>
+        <!-- Hidden default ensures a value is submitted even if checkbox is unchecked -->
+        <input type="hidden" name="newsletter_enabled" value="0">
+        <label><input type="checkbox" id="newsletter-enabled" name="newsletter_enabled" value="1" <?= ($values['newsletter_enabled'] === '1' ? 'checked' : '') ?>> Enable Newsletter</label>
         <div id="newsletter-settings" style="margin-top:.5rem;">
           <label><input type="radio" name="mail_driver" value="mail" <?= checked($values['mail_driver'], 'mail') ?>> PHP mail()</label>
           <label><input type="radio" name="mail_driver" value="smtp" <?= checked($values['mail_driver'], 'smtp') ?>> SMTP</label>
@@ -510,12 +513,16 @@ function selected($value, $expected)
   const nextBtn = document.getElementById('next-btn');
   const installBtn = document.getElementById('install-btn');
   let idx = 0;
+  const initialStep = parseInt('<?= isset($_POST['current_step']) ? (int) $_POST['current_step'] : 1 ?>', 10) || 1;
 
   function showStep(i){
     steps.forEach((s, j) => s.style.display = (i===j) ? 'block' : 'none');
     prevBtn.disabled = (i === 0);
     nextBtn.style.display = (i < steps.length - 1) ? 'inline-block' : 'none';
     installBtn.style.display = (i === steps.length - 1) ? 'inline-block' : 'none';
+    // Persist step for postback
+    const stepInput = document.getElementById('current_step');
+    if (stepInput) stepInput.value = String(i + 1);
     if (i === 0) animateChecks();
     if (i === steps.length - 1) buildReview();
   }
@@ -610,7 +617,7 @@ function selected($value, $expected)
     review.innerHTML = `<table style=\"width:100%;border-collapse:collapse;\">${rows.join('')}</table>`;
   }
 
-  showStep(0);
+  showStep(Math.max(0, initialStep - 1));
 })();
 </script>
 </body>
