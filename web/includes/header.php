@@ -11,31 +11,43 @@ $socialLinks = array_filter((array) echopress_config('artist.social', []), funct
   }
   return trim((string) $link) !== '';
 });
+
+// Build nav links with feature toggles
+$links = [
+  ['label' => 'Home', 'href' => '/', 'active' => ($current === '/' || $current === '/index.php' || $current === '/index.html')],
+];
+if (echopress_feature_enabled('blog')) {
+  $links[] = ['label' => 'Blog', 'href' => '/blog/', 'active' => strpos($current, '/blog/') === 0];
+}
+$links[] = ['label' => 'Discography', 'href' => '/discography/', 'active' => strpos($current, '/discography/') === 0];
+if (echopress_feature_enabled('contact')) {
+  $links[] = ['label' => 'Contact', 'href' => '/contact/', 'active' => strpos($current, '/contact/') === 0];
+}
+
+// Allow plugins/themes to modify nav
+$links = apply_filters('nav_links', $links, $current);
 ?>
 <header class="header-bar">
   <h1 class="site-title">
     <?= htmlspecialchars($siteName) ?>
   </h1>
   <button class="menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+  <?php do_action('header_before_nav'); ?>
   <nav class="main-nav">
-    <a href="/" <?php if ($current === '/' || $current === '/index.php' || $current === '/index.html')
-      echo ' class="current"'; ?>>Home</a>
-
-    <a href="/blog/" <?php if (strpos($current, '/blog/') === 0)
-      echo ' class="current"'; ?>>Blog</a>
-    <a href="/discography/" <?php if (strpos($current, '/discography/') === 0)
-      echo ' class="current"'; ?>>Discography</a>
-    <a href="/contact/" <?php if (strpos($current, '/contact/') === 0)
-      echo ' class="current"'; ?>>Contact</a>
+    <?php foreach ($links as $l):
+      $href = (string) ($l['href'] ?? '#');
+      $label = (string) ($l['label'] ?? '');
+      $active = !empty($l['active']);
+      ?>
+      <a href="<?= htmlspecialchars($href) ?>"<?= $active ? ' class="current"' : '' ?>><?= htmlspecialchars($label) ?></a>
+    <?php endforeach; ?>
     <?php if ($socialLinks): ?>
       <div class="social-links">
         <?php foreach ($socialLinks as $link):
           $url = is_array($link) ? trim((string) ($link['url'] ?? '')) : trim((string) $link);
           $icon = is_array($link) ? trim((string) ($link['icon'] ?? 'fas fa-link')) : 'fas fa-link';
           $label = is_array($link) ? trim((string) ($link['label'] ?? 'Social link')) : 'Social link';
-          if ($url === '') {
-            continue;
-          }
+          if ($url === '') { continue; }
           ?>
           <a href="<?= htmlspecialchars($url) ?>" target="_blank" rel="noopener noreferrer"
             class="external-link" aria-label="<?= htmlspecialchars($label) ?>">
@@ -45,5 +57,7 @@ $socialLinks = array_filter((array) echopress_config('artist.social', []), funct
       </div>
     <?php endif; ?>
   </nav>
+  <?php do_action('header_after_nav'); ?>
+  <?php do_action('header_end'); ?>
 </header>
 <script src="/js/nav.js?v=<?= htmlspecialchars($assetVersion) ?>"></script>

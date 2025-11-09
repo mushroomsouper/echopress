@@ -273,6 +273,7 @@ foreach ((array) echopress_config('artist.social', []) as $socialItem) {
   <link rel="manifest" href="/profile/favicon/site.webmanifest">
   <link rel="icon" href="/profile/favicon/favicon.ico">
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/theme_vars.php'; ?>
 
   <script type="application/ld+json">
 {

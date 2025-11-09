@@ -452,6 +452,29 @@ function formatCredits(array $creditsArr): string
           hasBackCover: <?= $hasBackCover ? 'true' : 'false' ?>
         };
     </script>
+    <script type="application/ld+json">
+    <?php
+      $ldTracks = [];
+      foreach ($tracks as $idx => $t) {
+        $ldTracks[] = [
+          '@type' => 'MusicRecording',
+          'name' => (string) ($t['title'] ?? ('Track ' . ($idx + 1))),
+          'position' => (int) ($t['number'] ?? ($idx + 1)),
+          'duration' => isset($t['length']) ? 'PT' . preg_replace('/^(\d+):(\d+)$/','${1}M${2}S',(string)$t['length']) : null,
+          'byArtist' => $artist !== '' ? ['@type' => 'MusicGroup', 'name' => $artist] : null,
+        ];
+      }
+      $ld = [
+        '@context' => 'https://schema.org',
+        '@type' => 'MusicAlbum',
+        'name' => $albumTitle,
+        'byArtist' => $artist !== '' ? ['@type' => 'MusicGroup', 'name' => $artist] : null,
+        'numTracks' => $trackCount,
+        'track' => $ldTracks,
+      ];
+      echo json_encode($ld, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+    ?>
+    </script>
     <!-- Include your external JS (e.g., player-logic.js) here -->
 
     <!-- End of album-player.php -->

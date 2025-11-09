@@ -1,5 +1,7 @@
 <?php
 require_once __DIR__ . '/../includes/app.php';
+require_once __DIR__ . '/../includes/feature_guard.php';
+echopress_require_feature('blog');
 date_default_timezone_set(echopress_timezone());
 require_once __DIR__ . '/../includes/utils.php';
 
@@ -149,6 +151,7 @@ if (file_exists($bannerFile)) {
     <link rel="stylesheet" href="/css/style.css?v=<?php echo $version; ?>">
     <link rel="stylesheet" href="/css/blog.css?v=<?php echo $version; ?>">
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/theme_vars.php'; ?>
 </head>
 
 <body class="blog-page blog-post">

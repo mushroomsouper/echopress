@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/../../includes/feature_guard.php';
+echopress_require_feature('playlists');
 $versionFile = __DIR__ . '/../../version.txt';
 $version = file_exists($versionFile) ? trim(file_get_contents($versionFile)) : '1';
 require_once __DIR__ . '/../../includes/utils.php';
@@ -80,6 +82,7 @@ $ogImage = rtrim($baseUrl, '/') . '/images/site-og-image.jpg';
   <link rel="stylesheet" href="/css/style.css?v=<?= htmlspecialchars($version) ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/theme_vars.php'; ?>
 </head>
 <body class="discography-page">
   <?php include __DIR__ . '/../../includes/header.php'; ?>

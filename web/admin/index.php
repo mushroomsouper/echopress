@@ -2,6 +2,7 @@
 require_once __DIR__ . '/session_secure.php';
 session_start();
 require_once __DIR__ . '/db_connect.php';
+require_once __DIR__ . '/../includes/app.php';
 if (empty($_SESSION['logged_in'])) {
     header('Location: login.php');
     exit;
@@ -57,8 +58,28 @@ unset($a);
     <link rel="icon" href="/profile/favicon/favicon.ico">
 </head>
 <body>
+<?php
+  // Show a setup prompt if the first-run lock doesn't exist
+  $firstRunLock = dirname(__DIR__, 1) . '/../storage/first_run.lock';
+  if (!is_file($firstRunLock)) {
+      echo '<div class="notice" style="background:#fff3cd;color:#856404;padding:10px;border-radius:6px;margin:10px 0;">';
+      echo '✔ Installation complete. Continue setup in the <a href="/first-run/">First‑Run wizard</a>.';
+      echo '</div>';
+  }
+?>
 <h1>Albums</h1>
-<p><a href="album_edit.php">Create New Album</a> | <a href="playlists.php">Playlists</a> | <a href="bio_edit.php">Edit Bio</a> | <a href="blog.php">Blog</a> | <a href="blog_edit.php">Blog Editor</a> | <a href="appearances.php">Also Appears On</a> | <a href="videos.php">Videos</a> | <a href="blog_banner.php">Blog Banner</a> | <a href="meta_edit.php">Page Meta</a> | <a href="analytics_embed.php">Analytics Embed</a> | <a href="newsletter.php">Newsletter</a> | <a href="contact_messages.php">Contact Activity</a> | <a href="logout.php">Logout</a> | <a href="favicon.php">Favicon</a></p>
+<p>
+  <a href="album_edit.php">Create New Album</a>
+  <?php if (echopress_feature_enabled('playlists')): ?> | <a href="playlists.php">Playlists</a><?php endif; ?>
+   | <a href="bio_edit.php">Edit Bio</a>
+  <?php if (echopress_feature_enabled('blog')): ?> | <a href="blog.php">Blog</a> | <a href="blog_edit.php">Blog Editor</a><?php endif; ?>
+   | <a href="appearances.php">Also Appears On</a>
+  <?php if (echopress_feature_enabled('videos')): ?> | <a href="videos.php">Videos</a><?php endif; ?>
+   | <a href="blog_banner.php">Blog Banner</a> | <a href="meta_edit.php">Page Meta</a> | <a href="analytics_embed.php">Analytics Embed</a>
+  <?php if (echopress_feature_enabled('newsletter')): ?> | <a href="newsletter.php">Newsletter</a><?php endif; ?>
+   | <a href="contact_messages.php">Contact Activity</a> | <a href="logout.php">Logout</a> | <a href="favicon.php">Favicon</a>
+   | <a href="appearance.php">Appearance</a>
+</p>
 <table class="album-list">
     <thead>
     <tr>
@@ -102,5 +123,19 @@ unset($a);
     <?php endforeach; ?>
     </tbody>
 </table>
+
+<section style="margin-top:2rem">
+  <h2>Getting Started</h2>
+  <ul>
+    <li><a href="album_edit.php">Create your first album</a></li>
+    <li><a href="bio_edit.php">Write your bio</a></li>
+    <li><a href="appearance.php">Pick a theme and colors</a></li>
+    <?php if (echopress_feature_enabled('blog')): ?><li><a href="blog_edit.php">Publish a blog post</a></li><?php endif; ?>
+    <?php if (echopress_feature_enabled('newsletter')): ?><li><a href="newsletter.php">Configure newsletter</a></li><?php endif; ?>
+    <li><a href="analytics_embed.php">Add analytics</a></li>
+    <li><a href="/preflight.php" target="_blank">Run preflight checks</a></li>
+  </ul>
+  <p><small>Tip: You can toggle features (Blog, Playlists, Newsletter, Videos, Contact) during First‑Run or later via env variables.</small></p>
+</section>
 </body>
 </html>

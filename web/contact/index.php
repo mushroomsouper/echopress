@@ -123,7 +123,8 @@ $ogImage = $pageMeta['og_image'] ?? '/images/site-og-image.jpg';
   <link rel="stylesheet" href="/css/style.css?v=<?php echo $version; ?>">
   <script src="https://www.google.com/recaptcha/api.js?render=<?php echo htmlspecialchars($siteKey); ?>" async
     defer></script>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/theme_vars.php'; ?>
 </head>
 
 <body>

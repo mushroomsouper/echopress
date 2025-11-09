@@ -181,6 +181,7 @@ $ogImage = $pageMeta['og_image'] ?? '/images/site-og-image.jpg';
   <link rel="stylesheet" href="/css/style.css?v=<?php echo $version; ?>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/analyticstracking.php'; ?>
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/includes/theme_vars.php'; ?>
 </head>
 
 <body class="discography-page">

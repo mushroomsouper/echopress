@@ -17,6 +17,31 @@ $requirements = [
     ['label' => 'Writable storage directory', 'ok' => is_dir($storageDir) ? is_writable($storageDir) : is_writable(dirname($storageDir))],
 ];
 
+// Additional preflight checks (informational; do not block install)
+$recommended = [
+    ['label' => 'Database driver available (pdo_sqlite or pdo_mysql)', 'ok' => (bool) (extension_loaded('pdo_sqlite') || extension_loaded('pdo_mysql'))],
+    ['label' => 'mbstring extension (recommended)', 'ok' => extension_loaded('mbstring')],
+    ['label' => 'fileinfo extension (recommended)', 'ok' => extension_loaded('fileinfo')],
+    ['label' => 'GD or Imagick for image processing (recommended)', 'ok' => (bool) (extension_loaded('gd') || extension_loaded('imagick'))],
+];
+
+// Writable paths created/used by Admin when managing content
+$discogDir = realpath(__DIR__ . '/../discography') ?: (__DIR__ . '/../discography');
+$blogDir   = realpath(__DIR__ . '/../blog') ?: (__DIR__ . '/../blog');
+$pathChecks = [
+    ['label' => 'Writable discography directory (web/discography)', 'ok' => is_dir($discogDir) ? is_writable($discogDir) : is_writable(dirname($discogDir))],
+    ['label' => 'Writable blog directory (web/blog)', 'ok' => is_dir($blogDir) ? is_writable($blogDir) : is_writable(dirname($blogDir))],
+];
+
+// Routing hint
+$docroot = $_SERVER['DOCUMENT_ROOT'] ?? '';
+$inWeb = false;
+if ($docroot !== '') {
+    $inWeb = strpos(realpath(__DIR__ . '/..') ?: '', realpath($docroot) ?: '') === 0;
+}
+$routingHint = $inWeb ? 'Serving directly from /web as document root.' : 'Using root proxy to route into /web.';
+$autoPrepend = (string) ini_get('auto_prepend_file');
+
 $canInstall = array_reduce($requirements, fn($carry, $item) => $carry && $item['ok'], true);
 
 function post_value(string $key, $default = '') {
@@ -25,6 +50,7 @@ function post_value(string $key, $default = '') {
 
 $defaults = [
     'site_name' => echopress_site_name(),
+    'artist_name' => echopress_artist_name(),
     'site_tagline' => echopress_site_tagline(),
     'site_url' => echopress_primary_url() ?: ('https://' . ($_SERVER['HTTP_HOST'] ?? 'example.com')),
     'contact_email' => echopress_support_email(),
@@ -45,6 +71,7 @@ $defaults = [
     'webhook_secret' => '',
     'webhook_method' => 'POST',
     'webhook_headers' => '',
+    'newsletter_enabled' => '1',
 ];
 
 $values = [];
@@ -111,6 +138,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canInstall) {
             'ECHOPRESS_TIMEZONE' => $values['timezone'],
             'ECHOPRESS_DB_CONNECTION' => $dbDriver,
             'ECHOPRESS_MAIL_DRIVER' => $mailDriver,
+            'ECHOPRESS_ARTIST_NAME' => $values['artist_name'],
+            'ECHOPRESS_FEATURE_NEWSLETTER' => ((isset($_POST['newsletter_enabled']) && $_POST['newsletter_enabled'] === '0') ? '0' : '1'),
         ];
 
         if ($dbDriver === 'mysql') {
@@ -165,7 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $canInstall) {
         }
 
         if ($success) {
-            header('Location: /admin/login.php?installed=1');
+            header('Location: /first-run/');
             exit;
         }
     }
@@ -205,12 +234,30 @@ function selected($value, $expected)
 <body>
 <div class="card">
     <h1>EchoPress Installer</h1>
-    <p>Complete the form below to configure your site. Once finished, you’ll be redirected to the admin login.</p>
-    <h2>Requirements</h2>
+    <p>Step 1: Preflight. Step 2: Settings.</p>
+    <h2>Preflight</h2>
+    <h3>Requirements</h3>
     <ul class="requirements">
         <?php foreach ($requirements as $req): ?>
             <li><?= $req['ok'] ? '✅' : '⚠️' ?> <?= htmlspecialchars($req['label']) ?></li>
         <?php endforeach; ?>
+    </ul>
+    <h3>Recommended</h3>
+    <ul class="requirements">
+        <?php foreach ($recommended as $rec): ?>
+            <li><?= $rec['ok'] ? '✅' : 'ℹ️' ?> <?= htmlspecialchars($rec['label']) ?></li>
+        <?php endforeach; ?>
+    </ul>
+    <h3>Paths</h3>
+    <ul class="requirements">
+        <?php foreach ($pathChecks as $pc): ?>
+            <li><?= $pc['ok'] ? '✅' : 'ℹ️' ?> <?= htmlspecialchars($pc['label']) ?></li>
+        <?php endforeach; ?>
+    </ul>
+    <h3>Routing</h3>
+    <ul class="requirements">
+        <li>ℹ️ <?= htmlspecialchars($routingHint) ?></li>
+        <li>ℹ️ auto_prepend_file: <?= htmlspecialchars($autoPrepend !== '' ? $autoPrepend : 'none') ?></li>
     </ul>
     <?php if (!$canInstall): ?>
         <p class="error">Please satisfy the requirements above before continuing.</p>
@@ -226,7 +273,131 @@ function selected($value, $expected)
         </div>
     <?php endif; ?>
 
-    <form method="post">
+    <!-- EchoPress Wizard -->
+    <form method="post" id="wizard-form" style="margin-bottom:2rem;">
+      <!-- Step 1: Preflight (animated) -->
+      <section class="wizard-step" data-step="1">
+        <p>Step 1 of 7 — Preflight checks</p>
+        <ul class="requirements checks" id="checks-required">
+          <?php foreach ($requirements as $req): ?>
+            <li class="check-item" data-ok="<?= $req['ok'] ? '1' : '0' ?>"><span class="icon">⏳</span> <?= htmlspecialchars($req['label']) ?></li>
+          <?php endforeach; ?>
+        </ul>
+        <h3>Recommended</h3>
+        <ul class="requirements checks" id="checks-recommended">
+          <?php foreach ($recommended as $rec): ?>
+            <li class="check-item" data-ok="<?= $rec['ok'] ? '1' : '0' ?>"><span class="icon">⏳</span> <?= htmlspecialchars($rec['label']) ?></li>
+          <?php endforeach; ?>
+        </ul>
+        <h3>Paths</h3>
+        <ul class="requirements checks" id="checks-paths">
+          <?php foreach ($pathChecks as $pc): ?>
+            <li class="check-item" data-ok="<?= $pc['ok'] ? '1' : '0' ?>"><span class="icon">⏳</span> <?= htmlspecialchars($pc['label']) ?></li>
+          <?php endforeach; ?>
+        </ul>
+        <h3>Routing</h3>
+        <ul class="requirements">
+          <li>ℹ️ <?= htmlspecialchars($routingHint) ?></li>
+          <li>ℹ️ auto_prepend_file: <?= htmlspecialchars($autoPrepend !== '' ? $autoPrepend : 'none') ?></li>
+        </ul>
+        <p id="preflight-summary" class="success" style="display:none;">Preflight complete. Continue to settings.</p>
+      </section>
+
+      <!-- Step 2: Site -->
+      <section class="wizard-step" data-step="2" style="display:none;">
+        <p>Step 2 of 7 — Site</p>
+        <label>Site Name<input type="text" name="site_name" value="<?= htmlspecialchars($values['site_name']) ?>" required></label>
+        <label>Artist Name<input type="text" name="artist_name" value="<?= htmlspecialchars($values['artist_name'] ?? echopress_artist_name()) ?>" required></label>
+        <label>Tagline (optional)<input type="text" name="site_tagline" value="<?= htmlspecialchars($values['site_tagline']) ?>"></label>
+        <label>Primary URL<input type="url" name="site_url" value="<?= htmlspecialchars($values['site_url']) ?>" required></label>
+      </section>
+
+      <!-- Step 3: Email -->
+      <section class="wizard-step" data-step="3" style="display:none;">
+        <p>Step 3 of 7 — Email</p>
+        <label>Contact Email<input type="email" name="contact_email" value="<?= htmlspecialchars($values['contact_email']) ?>" required></label>
+      </section>
+
+      <!-- Step 4: Timezone (searchable) -->
+      <section class="wizard-step" data-step="4" style="display:none;">
+        <p>Step 4 of 7 — Timezone</p>
+        <input type="text" id="tz-filter" placeholder="Search timezone…" autocomplete="off">
+        <select name="timezone" id="tz-select" size="8" required>
+          <?php foreach (timezone_identifiers_list() as $tz): ?>
+            <option value="<?= htmlspecialchars($tz) ?>"<?= $tz === $values['timezone'] ? ' selected' : '' ?>><?= htmlspecialchars($tz) ?></option>
+          <?php endforeach; ?>
+        </select>
+      </section>
+
+      <!-- Step 5: Database -->
+      <section class="wizard-step" data-step="5" style="display:none;">
+        <p>Step 5 of 7 — Database</p>
+        <p><strong>SQLite</strong> is easiest on shared hosting. <strong>MySQL/MariaDB</strong> is better for larger sites or multiple admins.</p>
+        <label><input type="radio" name="db_driver" value="sqlite" <?= checked($values['db_driver'], 'sqlite') ?>> SQLite (default)</label>
+        <label><input type="radio" name="db_driver" value="mysql" <?= checked($values['db_driver'], 'mysql') ?>> MySQL / MariaDB</label>
+        <div id="mysql-fields" style="display: <?= $values['db_driver'] === 'mysql' ? 'block' : 'none' ?>; margin-top:.5rem;">
+          <label>Host<input type="text" name="mysql_host" value="<?= htmlspecialchars($values['mysql_host']) ?>"></label>
+          <label>Port<input type="text" name="mysql_port" value="<?= htmlspecialchars($values['mysql_port']) ?>"></label>
+          <label>Database Name<input type="text" name="mysql_database" value="<?= htmlspecialchars($values['mysql_database']) ?>"></label>
+          <label>Username<input type="text" name="mysql_username" value="<?= htmlspecialchars($values['mysql_username']) ?>"></label>
+          <label>Password<input type="password" name="mysql_password" value="<?= htmlspecialchars($values['mysql_password']) ?>"></label>
+        </div>
+      </section>
+
+      <!-- Step 6: Newsletter -->
+      <section class="wizard-step" data-step="6" style="display:none;">
+        <p>Step 6 of 7 — Newsletter (optional)</p>
+        <label><input type="checkbox" id="newsletter-enabled" name="newsletter_enabled" value="1" checked> Enable Newsletter</label>
+        <div id="newsletter-settings" style="margin-top:.5rem;">
+          <label><input type="radio" name="mail_driver" value="mail" <?= checked($values['mail_driver'], 'mail') ?>> PHP mail()</label>
+          <label><input type="radio" name="mail_driver" value="smtp" <?= checked($values['mail_driver'], 'smtp') ?>> SMTP</label>
+          <label><input type="radio" name="mail_driver" value="webhook" <?= checked($values['mail_driver'], 'webhook') ?>> Webhook</label>
+          <div id="smtp-fields" style="display: <?= $values['mail_driver'] === 'smtp' ? 'block' : 'none' ?>;">
+            <label>SMTP Host<input type="text" name="smtp_host" value="<?= htmlspecialchars($values['smtp_host']) ?>"></label>
+            <label>SMTP Port<input type="text" name="smtp_port" value="<?= htmlspecialchars($values['smtp_port']) ?>"></label>
+            <label>SMTP Username<input type="text" name="smtp_username" value="<?= htmlspecialchars($values['smtp_username']) ?>"></label>
+            <label>SMTP Password<input type="password" name="smtp_password" value="<?= htmlspecialchars($values['smtp_password']) ?>"></label>
+            <label>Encryption
+              <select name="smtp_encryption">
+                <option value="tls" <?= selected($values['smtp_encryption'], 'tls') ?>>TLS</option>
+                <option value="ssl" <?= selected($values['smtp_encryption'], 'ssl') ?>>SSL</option>
+                <option value="none" <?= selected($values['smtp_encryption'], 'none') ?>>None</option>
+              </select>
+            </label>
+          </div>
+          <div id="webhook-fields" style="display: <?= $values['mail_driver'] === 'webhook' ? 'block' : 'none' ?>;">
+            <label>Webhook URL<input type="url" name="webhook_url" value="<?= htmlspecialchars($values['webhook_url']) ?>"></label>
+            <label>Webhook Secret Header<input type="text" name="webhook_secret" value="<?= htmlspecialchars($values['webhook_secret']) ?>"></label>
+            <label>HTTP Method
+              <select name="webhook_method">
+                <option value="POST" <?= selected(strtoupper($values['webhook_method']), 'POST') ?>>POST</option>
+                <option value="PUT" <?= selected(strtoupper($values['webhook_method']), 'PUT') ?>>PUT</option>
+                <option value="PATCH" <?= selected(strtoupper($values['webhook_method']), 'PATCH') ?>>PATCH</option>
+              </select>
+            </label>
+            <label>Additional Headers (comma separated `Header: value`)
+              <textarea name="webhook_headers" rows="3"><?= htmlspecialchars($values['webhook_headers']) ?></textarea>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Step 7: Review & Install -->
+      <section class="wizard-step" data-step="7" style="display:none;">
+        <p>Step 7 of 7 — Review</p>
+        <div id="review"></div>
+        <p>Click Install to write configuration and set up the database.</p>
+      </section>
+
+      <div class="actions">
+        <button type="button" id="prev-btn" disabled>Back</button>
+        <button type="button" id="next-btn">Next</button>
+        <button type="submit" id="install-btn" style="display:none;" <?= $canInstall ? '' : 'disabled' ?>>Install EchoPress</button>
+      </div>
+    </form>
+
+    <!-- Legacy static form below is hidden by JS; kept as fallback -->
+    <form method="post" id="legacy-install-form">
         <label>Site Name
             <input type="text" name="site_name" value="<?= htmlspecialchars($values['site_name']) ?>" required>
         </label>
@@ -320,30 +491,127 @@ function selected($value, $expected)
     </form>
 </div>
 <script>
-const dbRadios = document.querySelectorAll('input[name="db_driver"]');
-const mysqlFields = document.getElementById('mysql-fields');
-function updateDbFields() {
-    const selected = document.querySelector('input[name="db_driver"]:checked');
-    if (selected && selected.value === 'mysql') {
-        mysqlFields.style.display = 'block';
-    } else {
-        mysqlFields.style.display = 'none';
+(function(){
+  // Hide legacy preflight headings and legacy form
+  const legacyForm = document.getElementById('legacy-install-form');
+  if (legacyForm) { legacyForm.style.display = 'none'; }
+  // Also hide elements between wizard and legacy form (the old preflight blocks)
+  try {
+    const card = document.querySelector('.card');
+    const wizard = document.getElementById('wizard-form');
+    if (card && wizard) {
+      let n = wizard.previousElementSibling;
+      while (n && n.tagName !== 'H1') { n.style.display = 'none'; n = n.previousElementSibling; }
     }
-}
-dbRadios.forEach(r => r.addEventListener('change', updateDbFields));
-updateDbFields();
+  } catch(e) {}
 
-const mailRadios = document.querySelectorAll('input[name="mail_driver"]');
-const smtpFields = document.getElementById('smtp-fields');
-const webhookFields = document.getElementById('webhook-fields');
-function updateMailFields() {
-    const selected = document.querySelector('input[name="mail_driver"]:checked');
-    const driver = selected ? selected.value : 'mail';
-    smtpFields.style.display = driver === 'smtp' ? 'block' : 'none';
-    webhookFields.style.display = driver === 'webhook' ? 'block' : 'none';
-}
-mailRadios.forEach(r => r.addEventListener('change', updateMailFields));
-updateMailFields();
+  const steps = Array.from(document.querySelectorAll('.wizard-step'));
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+  const installBtn = document.getElementById('install-btn');
+  let idx = 0;
+
+  function showStep(i){
+    steps.forEach((s, j) => s.style.display = (i===j) ? 'block' : 'none');
+    prevBtn.disabled = (i === 0);
+    nextBtn.style.display = (i < steps.length - 1) ? 'inline-block' : 'none';
+    installBtn.style.display = (i === steps.length - 1) ? 'inline-block' : 'none';
+    if (i === 0) animateChecks();
+    if (i === steps.length - 1) buildReview();
+  }
+
+  prevBtn.addEventListener('click', () => { if (idx>0) { idx--; showStep(idx); } });
+  nextBtn.addEventListener('click', () => { if (idx<steps.length-1) { idx++; showStep(idx); } });
+
+  function animateChecks(){
+    const items = document.querySelectorAll('.checks .check-item');
+    let i = 0;
+    function tick(){
+      if (i >= items.length) {
+        const required = document.querySelectorAll('#checks-required .check-item');
+        let allOk = true;
+        required.forEach(li => { if (li.dataset.ok !== '1') allOk = false; });
+        nextBtn.disabled = !allOk;
+        const sum = document.getElementById('preflight-summary');
+        if (sum) sum.style.display = allOk ? 'block' : 'none';
+        return;
+      }
+      const li = items[i];
+      const ok = li.dataset.ok === '1';
+      const icon = li.querySelector('.icon'); if (icon) icon.textContent = ok ? '✅' : '⚠️';
+      li.style.opacity = '1';
+      i++;
+      setTimeout(tick, 250);
+    }
+    items.forEach(li => { li.style.opacity = '0.6'; });
+    nextBtn.disabled = true;
+    tick();
+  }
+
+  const tzFilter = document.getElementById('tz-filter');
+  const tzSelect = document.getElementById('tz-select');
+  if (tzFilter && tzSelect) {
+    tzFilter.addEventListener('input', () => {
+      const q = tzFilter.value.toLowerCase();
+      Array.from(tzSelect.options).forEach(opt => {
+        const match = opt.value.toLowerCase().includes(q);
+        opt.style.display = match ? '' : 'none';
+      });
+    });
+  }
+
+  const dbRadios = document.querySelectorAll('input[name="db_driver"]');
+  const mysqlFields = document.getElementById('mysql-fields');
+  function updateDbFields(){
+    const sel = document.querySelector('input[name="db_driver"]:checked');
+    if (mysqlFields) mysqlFields.style.display = (sel && sel.value === 'mysql') ? 'block' : 'none';
+  }
+  dbRadios.forEach(r => r.addEventListener('change', updateDbFields));
+  updateDbFields();
+
+  const newsletterEnabled = document.getElementById('newsletter-enabled');
+  const newsletterSettings = document.getElementById('newsletter-settings');
+  const mailRadios = document.querySelectorAll('input[name="mail_driver"]');
+  const smtpFields = document.getElementById('smtp-fields');
+  const webhookFields = document.getElementById('webhook-fields');
+  function updateNewsletter(){
+    const on = newsletterEnabled && newsletterEnabled.checked;
+    if (newsletterEnabled) newsletterEnabled.value = on ? '1' : '0';
+    if (newsletterSettings) newsletterSettings.style.display = on ? 'block' : 'none';
+  }
+  function updateMailFields(){
+    const sel = document.querySelector('input[name="mail_driver"]:checked');
+    const driver = sel ? sel.value : 'mail';
+    if (smtpFields) smtpFields.style.display = driver === 'smtp' ? 'block' : 'none';
+    if (webhookFields) webhookFields.style.display = driver === 'webhook' ? 'block' : 'none';
+  }
+  if (newsletterEnabled) newsletterEnabled.addEventListener('change', updateNewsletter);
+  mailRadios.forEach(r => r.addEventListener('change', updateMailFields));
+  updateNewsletter();
+  updateMailFields();
+
+  function buildReview(){
+    const review = document.getElementById('review');
+    if (!review) return;
+    const data = new FormData(document.getElementById('wizard-form'));
+    const rows = [];
+    function add(label, key){ rows.push(`<tr><td style=\"padding:.25rem .5rem;opacity:.8;\">${label}</td><td style=\"padding:.25rem .5rem;\">${(data.get(key)||'')}</td></tr>`); }
+    add('Site Name','site_name');
+    add('Artist Name','artist_name');
+    add('Tagline','site_tagline');
+    add('URL','site_url');
+    add('Email','contact_email');
+    add('Timezone','timezone');
+    add('DB Driver','db_driver');
+    add('MySQL Host','mysql_host');
+    add('MySQL DB','mysql_database');
+    add('Newsletter Enabled','newsletter_enabled');
+    add('Mail Driver','mail_driver');
+    review.innerHTML = `<table style=\"width:100%;border-collapse:collapse;\">${rows.join('')}</table>`;
+  }
+
+  showStep(0);
+})();
 </script>
 </body>
 </html>

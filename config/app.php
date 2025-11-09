@@ -101,4 +101,23 @@ return [
     'installer' => [
         'lock_file' => __DIR__ . '/../storage/installer.lock',
     ],
+
+    // New: feature flags to hide sections and routes
+    'features' => [
+        'blog' => (bool) (getenv('ECHOPRESS_FEATURE_BLOG') !== false ? (int) getenv('ECHOPRESS_FEATURE_BLOG') : 1),
+        'playlists' => (bool) (getenv('ECHOPRESS_FEATURE_PLAYLISTS') !== false ? (int) getenv('ECHOPRESS_FEATURE_PLAYLISTS') : 1),
+        'newsletter' => (bool) (getenv('ECHOPRESS_FEATURE_NEWSLETTER') !== false ? (int) getenv('ECHOPRESS_FEATURE_NEWSLETTER') : 1),
+        'videos' => (bool) (getenv('ECHOPRESS_FEATURE_VIDEOS') !== false ? (int) getenv('ECHOPRESS_FEATURE_VIDEOS') : 1),
+        'contact' => (bool) (getenv('ECHOPRESS_FEATURE_CONTACT') !== false ? (int) getenv('ECHOPRESS_FEATURE_CONTACT') : 1),
+    ],
+
+    // New: basic theme activation and plugin list
+    'themes' => [
+        // If empty, core templates under web/ are used.
+        'active' => getenv('ECHOPRESS_THEME') ?: '',
+    ],
+    'plugins' => [
+        // Example: ['hello-world'] loads web/plugins/hello-world/hello-world.php
+        'enabled' => ['hello-world'],
+    ],
 ];

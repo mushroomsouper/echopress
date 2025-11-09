@@ -107,6 +107,94 @@ if (!function_exists('echopress_config_reload')) {
     }
 }
 
+// Simple hooks API (actions/filters)
+if (!function_exists('add_action')) {
+    function add_action(string $hook, callable $callback, int $priority = 10): void
+    {
+        $GLOBALS['echopress_actions'][$hook][$priority][] = $callback;
+    }
+}
+if (!function_exists('do_action')) {
+    function do_action(string $hook, ...$args): void
+    {
+        if (empty($GLOBALS['echopress_actions'][$hook])) return;
+        ksort($GLOBALS['echopress_actions'][$hook]);
+        foreach ($GLOBALS['echopress_actions'][$hook] as $list) {
+            foreach ($list as $cb) {
+                try { $cb(...$args); } catch (\Throwable $e) { /* noop */ }
+            }
+        }
+    }
+}
+if (!function_exists('add_filter')) {
+    function add_filter(string $hook, callable $callback, int $priority = 10): void
+    {
+        $GLOBALS['echopress_filters'][$hook][$priority][] = $callback;
+    }
+}
+if (!function_exists('apply_filters')) {
+    function apply_filters(string $hook, $value, ...$args)
+    {
+        if (empty($GLOBALS['echopress_filters'][$hook])) return $value;
+        ksort($GLOBALS['echopress_filters'][$hook]);
+        foreach ($GLOBALS['echopress_filters'][$hook] as $list) {
+            foreach ($list as $cb) {
+                try { $value = $cb($value, ...$args); } catch (\Throwable $e) { /* noop */ }
+            }
+        }
+        return $value;
+    }
+}
+
+// Feature toggles
+if (!function_exists('echopress_feature_enabled')) {
+    function echopress_feature_enabled(string $feature, bool $default = true): bool
+    {
+        $val = echopress_config('features.' . $feature, $default);
+        return (bool) $val;
+    }
+}
+
+// Theme resolution
+if (!function_exists('echopress_theme_active')) {
+    function echopress_theme_active(): string
+    {
+        $active = (string) echopress_config('themes.active', '');
+        return $active;
+    }
+}
+if (!function_exists('echopress_template')) {
+    function echopress_template(string $relative): string
+    {
+        $relative = ltrim($relative, '/');
+        $theme = echopress_theme_active();
+        if ($theme !== '') {
+            $themePath = echopress_path('web/themes/' . $theme . '/' . $relative);
+            if (is_file($themePath)) return $themePath;
+        }
+        return echopress_path('web/' . $relative);
+    }
+}
+
+// Plugin loader
+if (!function_exists('echopress_load_plugins')) {
+    function echopress_load_plugins(): void
+    {
+        $enabled = (array) echopress_config('plugins.enabled', []);
+        foreach ($enabled as $slug) {
+            $slug = trim((string) $slug);
+            if ($slug === '') continue;
+            $main = echopress_path('web/plugins/' . $slug . '/' . $slug . '.php');
+            if (is_file($main)) {
+                try { require_once $main; } catch (\Throwable $e) { /* ignore plugin load failure */ }
+            }
+        }
+    }
+}
+
+// Initialize plugins and fire init hook
+echopress_load_plugins();
+do_action('init');
 if (!function_exists('echopress_site_name')) {
     function echopress_site_name(): string
     {

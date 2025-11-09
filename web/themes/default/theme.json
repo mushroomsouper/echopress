@@ -1,0 +1,10 @@
+{
+  "name": "Default",
+  "version": "0.1.0",
+  "author": "EchoPress",
+  "variables": {
+    "--theme-color": "#111111",
+    "--text-color": "#ffffff",
+    "--custom-fontsize-adjust": "0rem"
+  }
+}

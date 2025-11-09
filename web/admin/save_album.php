@@ -762,6 +762,12 @@ if ($includeBaseStyles) {
             "    font-size-adjust: " . number_format($fontScale, 4, '.', '') . ";\n" .
             "}\n\n";
     }
+    // Apply a consistent font-size adjustment across album player text via CSS variable
+    $remDelta = $fontScale - 1.0; // 1.00 = no change; 1.10 => +0.10rem; 0.90 => -0.10rem
+    $cssContent .= ".album-player {\n" .
+                   "    --custom-fontsize-adjust: " . number_format($remDelta, 3, '.', '') . "rem;\n" .
+                   "}\n\n";
+
     $cssContent .= "body.album-font-scope {\n";
     if ($fontFile) {
         $cssContent .= "    font-family: '{$fontFamily}', serif;\n";
