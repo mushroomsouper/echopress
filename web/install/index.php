@@ -495,16 +495,11 @@ function selected($value, $expected)
 </div>
 <script>
 (function(){
-  // Hide legacy preflight headings and legacy form
-  const legacyForm = document.getElementById('legacy-install-form');
-  if (legacyForm) { legacyForm.style.display = 'none'; }
-  // Also hide elements between wizard and legacy form (the old preflight blocks)
+  // Hide legacy preflight blocks (keep error messages visible)
   try {
     const card = document.querySelector('.card');
-    const wizard = document.getElementById('wizard-form');
-    if (card && wizard) {
-      let n = wizard.previousElementSibling;
-      while (n && n.tagName !== 'H1') { n.style.display = 'none'; n = n.previousElementSibling; }
+    if (card) {
+      card.querySelectorAll('h2, h3, .requirements').forEach(el => { el.style.display = 'none'; });
     }
   } catch(e) {}
 
@@ -550,6 +545,10 @@ function selected($value, $expected)
           }
         }
       }
+    } else {
+      // Give visual feedback while submitting
+      nextBtn.disabled = true; prevBtn.disabled = true; installBtn.disabled = true;
+      installBtn.textContent = 'Installing…';
     }
   });
 
