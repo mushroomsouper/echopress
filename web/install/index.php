@@ -625,17 +625,24 @@ function selected($value, $expected)
     if (!review) return;
     const data = new FormData(document.getElementById('wizard-form'));
     const rows = [];
-    function add(label, key){ rows.push(`<tr><td style=\"padding:.25rem .5rem;opacity:.8;\">${label}</td><td style=\"padding:.25rem .5rem;\">${(data.get(key)||'')}</td></tr>`); }
+    function add(label, key, transform){
+      let val = (data.get(key) || '');
+      if (typeof transform === 'function') val = transform(val);
+      rows.push(`<tr><td style=\"padding:.25rem .5rem;opacity:.8;\">${label}</td><td style=\"padding:.25rem .5rem;\">${val}</td></tr>`);
+    }
     add('Site Name','site_name');
     add('Artist Name','artist_name');
     add('Tagline','site_tagline');
     add('URL','site_url');
     add('Email','contact_email');
     add('Timezone','timezone');
+    const driver = (data.get('db_driver')||'');
     add('DB Driver','db_driver');
-    add('MySQL Host','mysql_host');
-    add('MySQL DB','mysql_database');
-    add('Newsletter Enabled','newsletter_enabled');
+    if (driver === 'mysql') {
+      add('MySQL Host','mysql_host');
+      add('MySQL DB','mysql_database');
+    }
+    add('Newsletter Enabled','newsletter_enabled', v => (v==='1' ? 'Yes' : 'No'));
     add('Mail Driver','mail_driver');
     review.innerHTML = `<table style=\"width:100%;border-collapse:collapse;\">${rows.join('')}</table>`;
   }
